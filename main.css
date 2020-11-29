@@ -1,5 +1,7 @@
 .hidden{display:none;}
 
+
+
 body{
 	overflow-x:hidden;
 	margin:0;
@@ -106,12 +108,16 @@ main{
 	
 }
 
+
 /* main nav styling */
+
+
 .logoBlock img{
 	height:auto;
-	width:15%;	
+	width:clamp(50px, 15%, 15%);	
 	display:inline-block;
-	flex-grow:4;
+
+
 	}
 
 .mainNav{
@@ -122,7 +128,7 @@ main{
 	}
 
 .links{
-	font-family:montserrat;
+	font-family:monserrat, arial;
 	list-style:none;
 	font-weight:500;
 	display:flex;
@@ -149,8 +155,12 @@ main{
 }
 
 .links li a:hover{
-	text-decoration:underline;
+	border-bottom:2px solid #FFB323;
+	color: #25F3CD;
+
 }
+
+
 
 
 .link{
@@ -162,30 +172,12 @@ main{
 
 }
 
-
 /* do not style the logo block logo block is a li */
-.link:not(:first-child){
-	max-height:25%;
-	flex-grow:1;
-	color:black;
-	background-color:white;
-	margin-top:20px;
-	margin-bottom:20px;
-	padding:10px;
-	border-radius:0px 0px 0px 0px;
-
-	border:solid 2px white;
-
-
-	
-}
 
 /* rounded corners only on first li element - open of pill */
 .link:nth-child(2){
 	/* border-radius:5px 0px 0px 5px; */
-	
 	border-right:1px solid black;
-
 }
 
 /* close pill with rounded corners on right side of last li element */
@@ -228,7 +220,7 @@ main{
 
 .footerLinks{
 
-	font-family:montserrat;
+	font-family:montserrat, arial;
 	list-style:none;
 	font-weight:500;
 	display:flex;
@@ -688,24 +680,40 @@ main{
 /* contact page styling */
 
 .contactCard{
-	flex:1 1 0px;
-	justify-content: space-evenly;
-	height:relative;
+	display:flex row;
+	flex-basis: 100%;
+	text-align: center;
+ 	justify-content: space-evenly;
 	height:100%;
-	position:relative;
+	flex-grow:1;
+	align-items: stretch;
+
+
+
+	}
+
+	.contactImgWrap{
+		max-width:relative;
+		display:flex;
+		flex-direction: row ;
+
 	}
 
 	.contactCard img{
-	max-width:200px;
-	padding:10px;
-	margin:10px;	
+		height:auto;
+		object-fit: cover;
+		max-width:32%;
+		align-items: center;
+		justify-content: center;
+		margin:0 auto;
+
 	}
 
 	.contactCard>h2{
-	font-size:2.2rem;
+	font-size:clamp(2.2rem,4rem,4rem);
 	text-transform: uppercase;
-	text-align:center;
-	margin-top:0px;
+	text-align:left;
+	margin:10px;
 	color:white;
 
 	-webkit-text-stroke-width: 2px;
@@ -713,9 +721,14 @@ main{
 	}
 
 	.contactCard p{
+	font-family: montserrat, arial;
 	font-size:1rem;
 	color:black;
 	line-height:150%;
+	}
+
+	.contactCard p span{
+		font-size:clamp(1rem,1.5rem,1.5rem);
 	}
 
 	.contactCard p a{
@@ -725,7 +738,7 @@ main{
 	}
 
 	.contactReadMore>a{
-		font-family:montserrat;
+		font-family:montserrat, arial;
 		text-decoration:none;
 		color:black;
 		font-weight:700;
@@ -749,11 +762,13 @@ main{
 
 /* contact form styling for contact page */ 
 .formWrapper{
-	display:flex;
+	display:flex nowrap;
 	margin-bottom:10px;	
-
-
 }
+
+/* .formMain{
+	background:red;
+}*/
 
 	.formMain legend {
     background-color: #000;
@@ -784,8 +799,8 @@ main{
 	}
 
 	.output {
-font-family:impact;
-color:red;
+	font-family:impact;
+	color:red;
 	}
 
 
@@ -794,9 +809,16 @@ color:red;
 /* dont judge me for these confusing class names pls */
 /*this one actually wraps the form itself*/
 	.formWrap{
+	display:flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	background:white;
+	flex-grow:3;
+	margin-top:10px;
+	flex-basis:100%;
+
+	
+
 	}
 
 	input[type=text], select, textarea {
@@ -914,14 +936,7 @@ color:red;
 	}
 
 
-	.formWrapper{
-		flex-direction: column;
-	}
 
-
-	.formWrap{
-		margin-bottom:10px;
-	}
 
 }
 
