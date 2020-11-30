@@ -10,13 +10,13 @@ body{
 }
 
 h2{
-	font-family:Inconsolata, arial;
-	color:#25F3CD;
-	font-size:16px;
+	font-family:montserrat, arial;
+	color:black;
+	font-size:2rem;
 }
 	
 h3{
-	font-family:inconsolata, arial;
+	font-family:montserrat, arial;
 	color:#FFB323;
 	font-weight:400;
 }
@@ -304,7 +304,7 @@ main{
 
 .copyright{
 	
-	text-align:left;
+	text-align:center;
 	width:100%;
 	padding:10px;
 	margin:0 auto;
@@ -683,26 +683,22 @@ main{
 	display:flex row;
 	text-align: center;
  	justify-content: space-evenly;
-	height:100%;
-	flex-grow:1;
 	align-items: flex-start ;
+		margin-bottom:10px;
 	}
 
 	.contactImgWrap{
 		display:flex;
-		flex-direction: row ;
-		background-color:white;
 		padding:10px;
+		max-height:auto;
+		
 
 	}
 
-	.contactCard img{
+	.contactImgWrap>img{
 		height:auto;
-		object-fit: auto;
 		max-width:33%;
-		align-items: center;
-		justify-content: center;
-		display:inline-block;
+		display:flex;
 		margin:0 auto;
 	}
 
@@ -714,16 +710,29 @@ main{
 		opacity:.33;
 	}
 
-	.contactCard>h2{
-	font-size:clamp(2.2rem,4rem,4rem);
-	text-transform: uppercase;
-	text-align:left;
-	margin:10px;
-	color:white;
-
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: black;
+	#contactName{
+			color:white;
+			font-family:Inconsolata, arial;
+			font-size:clamp(2rem, 3rem, 3.5rem);
+			font-weight:1000;
+		
+		
+			text-transform:uppercase;
+		
+			justify-content:center;
+			align-content:center;
+			
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: black;
+		
 	}
+
+	.contactCard>h2>span{
+		font-size:2rem;
+		text-transform: uppercase;
+		text-align:left;
+		color:black;
+		}
 
 	.contactCard p{
 	font-family: montserrat, arial;
@@ -742,42 +751,24 @@ main{
 	text-transform: uppercase;
 	}
 
-	.contactReadMore>a{
-		font-family:montserrat, arial;
-		text-decoration:none;
-		color:black;
-		font-weight:700;
-		text-transform:uppercase;
-		background-color:white;
-		padding:5px;
-	}
 
-	.contactReadMore{
-		list-style:none; 
-		text-align:center;
-		margin-bottom:10px;
-
-}
 
 .directContactBox{
-	background:white;
-	text-align:left;
+	text-align:center;
+	padding:50px;
+	margin:10px;
+	width:auto;
+	background-color:black;
 }
 
 
 
-/* contact form styling for contact page
-.formWrapper{
-	display:flex nowrap;
-	margin-bottom:10px;	
-	background:red;
-}
-*/
+
+/* contact form styling for contact page */
 
 
-/* .formMain{
-	background:red;
-}*/
+
+
 
 	.formMain legend {
     background-color: #000;
@@ -822,10 +813,7 @@ main{
 	flex-direction: column;
 	justify-content: space-evenly;
 	background:white;
-	margin-top:10px;	
 	margin-bottom:10px;
-	
-
 	}
 
 	input[type=text], select, textarea {

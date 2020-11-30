@@ -2,20 +2,20 @@
 
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-	<title class="hidden">ALL ABOUT SPENCER</title>
-	<meta name="description" content="Final Integrated Project">
-	<meta name="author" content="Spencer Dipierdomenico">
-	<link rel="stylesheet" href="main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title class="hidden">ALL ABOUT SPENCER</title>
+  <meta name="description" content="Final Integrated Project">
+  <meta name="author" content="Spencer Dipierdomenico">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 	<div class="wrapper">
 		<h1 class="hidden">Spencer Dipierdomenico - FIP SITE</h1>
 
-				<!-- header start -->
 
+		<!-- header start -->
 		<header class="header">
 			<h2 class="hidden">SPENCERS HEADER</h2>
 				<nav class="mainNav">
@@ -34,64 +34,85 @@
 
 
 <main>
-<!-- built modular, swap articles for hero and vice versa -->
+<!-- page content starts here-->
+
 <div class="heroWrap">
 	<div class="hero">
-		<h2>SPENCER'S WEBSITE</h2>
-			<h3>JUST KEEP IT MOVIN'</h3>
+		<h2>SPENCER'S INFO</h2>
+			<h3>YOU CAN CONTACT ME HERE</h3>
 	</div>
 </div>
 
-<!-- ARTICLES ARE FLEX OBJECTS IN A WRAP CALLED .articles -->
-<section class="articles">
-	<h2 class="hidden">Articles</h2>
-
-<article class="article">
-	<img src="./images/home/dirtbike.gif">
-	<div class="lineBreak"><h2>BREAKING <span>STUFF</span></h2></div>
-		<p>
-		You have to break something before you can <s>fix it</s> procrastinate fixing it.
-		</p>
-		<li class="readMore"><a class="borderSpin" href="#">Read More</a></li>
-</article>
-
-<article class="article">
-	<img src="./images/home/dirtbike.gif">
-	<div class="lineBreak"><h2>GROWING <span>STUFF</span></h2></div>
-	<p>
-		You have to break something before you can <s>fix it</s> procrastinate fixing it.
-		</p>
-			<li class="readMore"><a class="borderSpin" href="#">Read More</a></li>
-</article>
 
 
 
-
-<article class="article">
-	<img src="./images/home/dirtbike.gif">
-	<div class="lineBreak"><h2>CREATING <span>STUFF</span></h2></div>
-		<p>
-			You have to break something before you can <s>fix it</s> procrastinate fixing it.
-		</p>
-		<li class="readMore"><a class="borderSpin" href="#">Read More</a></li>
-</article>
+	<!-- Contact card with picture-->
 
 
+	<section class="contactCard">
+
+		<div class="contactImgWrap">
+			<img src="./images/contact/contact_picture.gif">
+			<img src="./images/contact/contact_picture.gif">
+			<img src="./images/contact/contact_picture.gif">
+		</div>
+
+		<h2>Spencer Dipierdomenico</h2>
+		<!-- <fieldset class="directContactBox"> -->
+
+			<!--<img id="qrCode" src="./images/contact/qr.JPG">
+			<p>
+			<a href="mailto:spencer@blitzed.ca">SPENCER@BLITZED.CA</a></br>-->
+			<div class="lineBreak"><h2>E<span>MAIL</span></div>
+			<h2><span>SPENCER@BLITZED.CA</span></h2>
+			<div class="lineBreak"><h2>CELL<span>PHONE</span></div>
+			<h2><span>(519) 694-9569</span></h2></br>
+		<!-- </fieldset> -->
 	</section>
+	</fieldset>
 
-<!-- end of articles -->
 
-<div class="heroWrap">
-<aside class="contentBlock">
-<h2>What is this website all about?</h2>
-<h3>
-It's about me! Obviously...
-</h3>
-<p>
-Hi there, my name is Spencer.
-</p>
-</aside>
-</div>
+	<fieldset class="formWrap"> <!-- this one wraps actual form from top bar down to submit -->
+		<!-- <legend>Contact Top Fieldset</legend> -->
+		<div class="lineBreak">CONTACT FORM</div>
+	
+	
+		<form class="formMain">
+	
+		<fieldset class="aoi">
+		  <legend>Area of Inquiry</legend>
+	  
+		  <input type="radio" name="webs">
+		  <label for="webs">Web Development</label><br/>
+	  
+		  <input type="radio" name="gfx">
+		  <label for="gfx">Graphic Design</label><br/>
+	  
+		  <input type="radio" name="other">
+		  <label for="other">Other Media</label>
+		</fieldset>
+	
+		<fieldset class="yourInfo">
+			<legend>Your Information</legend>
+		<form form="usrform">
+			<label for="fname">First Name</label>
+			<input class="borderSpinActive" type="text" id="fname" name="firstname" form="usrform" placeholder="Enter First Name">
+		
+			<label for="lname">Last Name</label>
+			<input class="borderSpinActive" type="text" id="lname" name="lastname" form="usrform" placeholder="Enter Last Name">
+	
+			<label for="subject">Subject</label>
+			<input class="borderSpinActive" type="text" id="subject" name="subject" form="usrform" placeholder="Write Subject Here">
+	
+			<label for="subject">Message</label>
+			<textarea class="borderSpinActive" rows="9" cols="8" name="message" form="usrform" placeholder="Write Message Here"></textarea>
+		</fieldset>
+	
+			<input class="borderSpin" type="submit" value="Submit">
+		
+		</form>
+	<!-- </div> -->
+
 
 </main>
 
@@ -150,10 +171,9 @@ Hi there, my name is Spencer.
 	</section>
 	</footer>
 
-</div>
 
 
 
-<script src="./js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
