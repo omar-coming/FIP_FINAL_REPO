@@ -325,7 +325,19 @@ main{
 		align-content: center;
 	}
 
+/* general section wrap */
 
+.sectionWrap{
+	background:blue;
+
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	width:100%;
+	
+	margin-bottom:10px;
+	height:auto;
+}
 
 /* hero */
 
@@ -673,6 +685,28 @@ main{
   box-shadow: 1px 1px 2px 0px #ccc;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* contact page styling */
 
 .contactCard{
@@ -868,6 +902,21 @@ main{
 	  font-size:1em;
 	  color:#999;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* swap attributes for responsive use */
