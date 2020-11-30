@@ -1,7 +1,5 @@
 .hidden{display:none;}
 
-
-
 body{
 	overflow-x:hidden;
 	margin:0;
@@ -12,7 +10,7 @@ body{
 h2{
 	font-family:montserrat, arial;
 	color:black;
-	font-size:2rem;
+	font-size:1em;
 }
 	
 h3{
@@ -23,7 +21,7 @@ h3{
 
 p{
 	font-family:montserrat, arial;
-	font-size:clamp(12px, 16px, 24px);
+	font-size:1rem;
 	font-weight:500;
 }
 
@@ -33,7 +31,7 @@ p{
 	text-align: center;
 	margin:0 auto;
 	font-family:Inconsolata, arial;
-	font-size:2rem;
+	font-size:1em;
 }
 
 .lineBreak>h2>span{
@@ -147,7 +145,6 @@ main{
 	text-decoration:none;
 	color:black;
 	letter-spacing:2px;
-	font-size:clamp(2.5, 3rem, 3.5rem);
 
 	padding:10px;
 
@@ -167,7 +164,6 @@ main{
 	max-width:relative;
 	padding:0;
 	margin:0;
-	margin-bottom:-6px;
 	flex-grow:1;
 
 }
@@ -246,7 +242,7 @@ main{
 
 .footerLink a{
 	color:black;
-	font-size:.5rem;
+	font-size:.5em;
 	text-decoration:none;
 }
 
@@ -322,7 +318,7 @@ main{
 	.copyright p{
 		padding:10px;
 		margin-left:20px;
-		font-size:(2rem);
+		font-size:(2em);
 
 		justify-content: center;
 		align-items: center;
@@ -362,7 +358,7 @@ main{
 .hero h2{
 	color:white;
 	font-family:Inconsolata, arial;
-	font-size:clamp(2rem, 3rem, 3.5rem);
+	font-size:clamp(2em, 3em, 3.5em);
 	font-weight:1000;
 
 
@@ -416,7 +412,7 @@ main{
 	}
 
 .article>h2{
-	font-size:1.5rem;
+	font-size:1.5em;
 	text-align:left;
 	margin-left:10px;
 	margin-bottom:0;
@@ -467,7 +463,7 @@ main{
 }
 
 .contentBlock h2{
-	font-size:3rem;
+	font-size:3em;
 	color:#25F3CD;
 
 	margin-left:20px;
@@ -477,7 +473,7 @@ main{
 }
 
 .contentBlock h3{
-	font-size:2rem;
+	font-size:2em;
 	color:#FFB323;
 	margin-left:25px;
 	margin-bottom:0px;
@@ -713,7 +709,7 @@ main{
 	#contactName{
 			color:white;
 			font-family:Inconsolata, arial;
-			font-size:clamp(2rem, 3rem, 3.5rem);
+			font-size:clamp(2em, 3em, 3.5em);
 			font-weight:1000;
 		
 		
@@ -728,7 +724,7 @@ main{
 	}
 
 	.contactCard>h2>span{
-		font-size:2rem;
+		font-size:1.5em;
 		text-transform: uppercase;
 		text-align:left;
 		color:black;
@@ -736,13 +732,13 @@ main{
 
 	.contactCard p{
 	font-family: montserrat, arial;
-	font-size:1rem;
+	font-size:1em;
 	color:black;
 	line-height:150%;
 	}
 
 	.contactCard p span{
-		font-size:clamp(1rem,1.5rem,1.5rem);
+		font-size:clamp(1em,1.5em,1.5em);
 	}
 
 	.contactCard p a{
@@ -847,7 +843,7 @@ main{
 	margin: 0 auto;
 	border: none;
 	cursor: pointer;
-	font-size:1rem;
+	font-size:1em;
 	font-family:Inconsolata, arial;
 	font-weight:500;
 	letter-spacing:2px;
@@ -863,13 +859,13 @@ main{
 
 	label{
 	font-family:Inconsolata, arial;
-	font-size:1rem;
+	font-size:1em;
 	padding-left:10px;
 	}
 
 	input::placeholder, textarea::placeholder{
 	font-family:Inconsolata, arial;
-	  font-size:1rem;
+	  font-size:1em;
 	  color:#999;
 }
 
