@@ -941,8 +941,6 @@ main{
 		background: rgb(255,255,255);
 		background: linear-gradient(0deg, rgba(255,255,255,1) 80%, rgba(187,187,187,1) 95%);
 		
-		border-bottom:2px solid rgba(176, 176, 176,1);
-		border-radius:10px 10px 0px 0px;
 		
 		order:1;
 	}
@@ -953,15 +951,18 @@ main{
 	}
 	
 	.article:nth-child(4){
-		border-bottom:2px solid rgba(176, 176, 176,1);
-		border-radius:0px 0px 10px 10px;
 		order:3;
 	}
 	
 	.copyright{
 		border-left:0px;
 	}
-
+		
+	.articles{
+		display:flex;
+		flex-direction:column;
+		justify-content:space-evenly;	
+	}
 
 
 
