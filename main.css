@@ -331,7 +331,7 @@ main{
 	background:blue;
 
 	display:flex;
-	flex-direction:row;
+	flex-direction:row wrap;
 	justify-content:space-evenly;
 	width:100%;
 	
