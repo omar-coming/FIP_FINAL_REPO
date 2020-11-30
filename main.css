@@ -690,7 +690,7 @@ main{
 	.contactImgWrap{
 		display:flex;
 		padding:10px;
-		max-height:auto;
+		max-height:100%;
 		
 
 	}
