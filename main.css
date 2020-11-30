@@ -710,7 +710,7 @@ main{
 /* contact page styling */
 
 .contactCard{
-	display:column row;
+	display:flex wrap;
 	text-align: center;
  	justify-content: space-evenly;
 	align-items: flex-start ;
@@ -718,18 +718,20 @@ main{
 	}
 
 	.contactImgWrap{
-		display:flex;
 		padding:10px;	
-		display: flex row;	
+		display: flex;	
 		background: white;
+		max-width:auto;
+		flex:1;
+
+
 
 	}
 
 	.contactImgWrap>img{
-		height:auto;
-		width:33%;
-		display:flex;
 		margin:0 auto;
+		width:33%;
+		height:auto;
 	}
 
 	.contactCard img:nth-child(2){
@@ -1080,9 +1082,4 @@ main{
 .galleryItem>img{
 	
 	max-width:100%;
-}
-
-#qrCode{
-	max-height:100px;
-	max-width:100px;
 }
