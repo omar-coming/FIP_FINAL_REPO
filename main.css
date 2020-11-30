@@ -327,18 +327,6 @@ main{
 
 /* general section wrap */
 
-.sectionWrap{
-	background:blue;
-
-	display:flex;
-	flex-direction:row wrap;
-	justify-content:space-evenly;
-	width:100%;
-	
-	margin-bottom:10px;
-	height:auto;
-}
-
 /* hero */
 
 .heroWrap{
@@ -709,6 +697,33 @@ main{
 
 /* contact page styling */
 
+/*main articles*/
+.contactCard{
+	display:flex;
+	flex-direction:column wrap;
+
+	justify-content:space-evenly;
+	margin-bottom:10px;
+	background:white;
+	width: inherit;
+	padding:10px;
+}
+
+.contactImg>img{
+	display:block;
+	width:100%;
+	
+	/* set items at 0 baseline and allow to grow */
+	flex:3 1 0px;
+	
+	/* background: rgb(228,228,228);
+	background: linear-gradient(45deg, rgba(228,228,228,1) 0%, rgba(255,255,255,1) 55%, rgba(228,228,228,1) 100%);
+	*/
+	
+}
+
+
+/*
 .contactCard{
 	display:flex wrap;
 	text-align: center;
@@ -733,15 +748,17 @@ main{
 
 	.contactImgWrap>img{
 		margin:0 auto;
-		width:32.5%;
 		height:auto;
+		width:1/3;
 	}
 
-	.contactCard img:nth-child(2){
+	*/
+
+	.contactImg:nth-child(2){
 		opacity:.66;
 	}
 
-	.contactCard img:nth-child(3){
+	.contactImg:nth-child(3){
 		opacity:.33;
 	}
 
@@ -767,13 +784,7 @@ main{
 .contactInfoBox{
 	display:flex row;
 	text-align:center;
-	padding:50px;
-	margin-left:10px;
-	margin-right:10px;
-	margin-bottom:10px;
-
-	width:auto;
-	background-color:yellow;
+	padding:10px;
 }
 
 
@@ -922,12 +933,7 @@ main{
 		align-items:center;
 		justify-content:center;
 	}
-		
-	.articles{
-		display:flex;
-		flex-direction:column;
-		justify-content:space-evenly;	
-	}
+	
 
 
 	
