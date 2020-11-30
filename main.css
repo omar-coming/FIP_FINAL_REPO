@@ -112,10 +112,8 @@ main{
 
 .logoBlock img{
 	height:auto;
-	width:clamp(50px, 15%, 15%);	
+	width:2em;	
 	display:inline-block;
-
-
 	}
 
 .mainNav{
@@ -785,12 +783,19 @@ main{
 	display:flex row;
 	text-align:center;
 	padding:10px;
+	background:white;
+	margin-bottom:10px;
 }
 
 
 
 
 /* contact form styling for contact page */
+
+.formMain{
+	background:white;
+	margin-bottom:10px;
+}
 
 
 
@@ -920,7 +925,7 @@ main{
 
 @media screen and (max-width: 600px){
 	.hidden{display:none;}
-	html, body{height:100%;}
+	html, body{height:100%; 	background-color: #25F3CD;}
 	body{margin:0;}
 	
 	.mainWrapper > * {
