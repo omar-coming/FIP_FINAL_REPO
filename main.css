@@ -680,7 +680,7 @@ main{
 /* contact page styling */
 
 .contactCard{
-	display:flex row;
+	display:column row;
 	text-align: center;
  	justify-content: space-evenly;
 	align-items: flex-start ;
@@ -689,9 +689,8 @@ main{
 
 	.contactImgWrap{
 		display:flex;
-		padding:10px;
-		max-height:100%;
-		
+		padding:10px;	
+		display: flex row;	
 
 	}
 
@@ -700,6 +699,7 @@ main{
 		max-width:33%;
 		display:flex;
 		margin:0 auto;
+		max-height:relative;
 	}
 
 	.contactCard img:nth-child(2){
