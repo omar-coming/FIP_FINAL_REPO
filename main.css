@@ -685,7 +685,7 @@ main{
  	justify-content: space-evenly;
 	height:100%;
 	flex-grow:1;
-	align-items: stretch;
+	align-items: flex-start ;
 	}
 
 	.contactImgWrap{
@@ -698,7 +698,7 @@ main{
 
 	.contactCard img{
 		height:auto;
-		object-fit: contain;
+		object-fit: auto;
 		max-width:33%;
 		align-items: center;
 		justify-content: center;
@@ -766,11 +766,14 @@ main{
 
 
 
-/* contact form styling for contact page */ 
+/* contact form styling for contact page
 .formWrapper{
 	display:flex nowrap;
 	margin-bottom:10px;	
+	background:red;
 }
+*/
+
 
 /* .formMain{
 	background:red;
@@ -812,14 +815,15 @@ main{
 
 
 
-/* dont judge me for these confusing class names pls */
-/*this one actually wraps the form itself*/
+/*formWrap = contact form wrap - contact form is found on contact page obv */
+
 	.formWrap{
 	display:flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	background:white;
 	margin-top:10px;	
+	margin-bottom:10px;
 	
 
 	}
@@ -834,10 +838,6 @@ main{
 	box-sizing: border-box;
 	overflow:hidden;
 	} 
-
-	textarea {
-		resize: none;
-	 }
 
 	 textarea:focus{
 		 outline:none;
@@ -899,7 +899,7 @@ main{
 		flex-flow:row wrap;
 		text-align:center;
 		box-sizing:border-box;
-		flex:1 100%;
+		flex:1 1 100%;
 		border-radius:0px;
 		align-items:center;
 		justify-content:center;
