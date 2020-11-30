@@ -680,7 +680,7 @@ main{
 /* contact page styling */
 
 .contactCard{
-	display:flex column;
+	display:flex row;
 	text-align: center;
  	justify-content: space-evenly;
 	align-items: flex-start ;
@@ -689,16 +689,16 @@ main{
 
 	.contactImgWrap{
 		display:flex;
-		flex-direction: row ;
-		background-color:white;
 		padding:10px;
+		max-height:auto;
+		
+
 	}
 
 	.contactImgWrap>img{
 		height:auto;
-
 		max-width:33%;
-		display:inline-block;
+		display:flex;
 		margin:0 auto;
 	}
 
@@ -710,22 +710,27 @@ main{
 		opacity:.33;
 	}
 
-	.contactCard>h2{
-	font-size:clamp(2.2rem,4rem,4rem);
-	text-transform: uppercase;
-	text-align:center;
-	margin:10px;
-	color:white;
-
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: black;
+	#contactName{
+			color:white;
+			font-family:Inconsolata, arial;
+			font-size:clamp(2rem, 3rem, 3.5rem);
+			font-weight:1000;
+		
+		
+			text-transform:uppercase;
+		
+			justify-content:center;
+			align-content:center;
+			
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: black;
+		
 	}
 
 	.contactCard>h2>span{
-		font-size:clamp(2.2rem,2.5rem,4rem);
+		font-size:2rem;
 		text-transform: uppercase;
-		text-align:center;
-		margin:10px;
+		text-align:left;
 		color:black;
 		}
 
@@ -746,36 +751,14 @@ main{
 	text-transform: uppercase;
 	}
 
-	.contactReadMore>a{
-		font-family:montserrat, arial;
-		text-decoration:none;
-		color:black;
-		font-weight:700;
-		text-transform:uppercase;
-		background-color:white;
-		padding:5px;
-		margin-top:10px;
 
-
-
-
-	}
-
-	.contactReadMore{
-		list-style:none; 
-		text-align:center;
-		height:auto;
-		margin:10px;
-		width:100%;
-
-
-}
 
 .directContactBox{
 	text-align:center;
 	padding:50px;
 	margin:10px;
 	width:auto;
+	background-color:black;
 }
 
 
@@ -831,8 +814,6 @@ main{
 	justify-content: space-evenly;
 	background:white;
 	margin-bottom:10px;
-
-	background: white;
 	}
 
 	input[type=text], select, textarea {
