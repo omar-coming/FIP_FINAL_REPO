@@ -59,7 +59,7 @@ p{
     border-bottom: 2px solid #25F3CD;
 }
 	
-.wrapper{
+.mainWrapper{
 	border-right:5px solid #25F3CD;
 	border-left:5px solid #25F3CD ;
 	text-align:center;
@@ -77,7 +77,7 @@ main{
 	background:#d3d3d3;
 }
 
-.wrapper > * {
+.mainWrapper > * {
 	padding: 10px;
 	padding-bottom:0px;
 	margin: 0;
@@ -87,7 +87,7 @@ main{
 
 }
 
-.wrapper > .hidden{display:none;}
+.mainWrapper > .hidden{display:none;}
 
 /* header includes nav menu *** logo block is first link in nav menu *** */
 
@@ -721,15 +721,15 @@ main{
 		display:flex;
 		padding:10px;	
 		display: flex row;	
+		background: white;
 
 	}
 
 	.contactImgWrap>img{
-		max-height:auto;
-		max-width:33%;
+		height:auto;
+		width:33%;
 		display:flex;
 		margin:0 auto;
-		max-height:relative;
 	}
 
 	.contactCard img:nth-child(2){
@@ -757,38 +757,15 @@ main{
 		
 	}
 
-	.contactCard>h2>span{
-		font-size:1.5em;
-		text-transform: uppercase;
-		text-align:left;
-		color:black;
-		}
-
-	.contactCard p{
-	font-family: montserrat, arial;
-	font-size:1em;
-	color:black;
-	line-height:150%;
-	}
-
-	.contactCard p span{
-		font-size:clamp(1em,1.5em,1.5em);
-	}
-
-	.contactCard p a{
-	color:#25F3CD;
-	text-decoration:underline;
-	text-transform: uppercase;
-	}
 
 
-
-.directContactBox{
+.contactInfoBox{
+	display:flex row;
 	text-align:center;
 	padding:50px;
 	margin:10px;
 	width:auto;
-	background-color:black;
+	background-color:pink;
 }
 
 
@@ -927,7 +904,7 @@ main{
 	html, body{height:100%;}
 	body{margin:0;}
 	
-	.wrapper > * {
+	.mainWrapper > * {
 		display:flex;
 		flex-flow:row wrap;
 		text-align:center;
