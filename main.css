@@ -681,33 +681,37 @@ main{
 
 .contactCard{
 	display:flex row;
-	flex-basis: 100%;
 	text-align: center;
  	justify-content: space-evenly;
 	height:100%;
 	flex-grow:1;
 	align-items: stretch;
-
-
-
 	}
 
 	.contactImgWrap{
-		max-width:relative;
 		display:flex;
 		flex-direction: row ;
+		background-color:white;
+		padding:10px;
 
 	}
 
 	.contactCard img{
 		height:auto;
-		object-fit: cover;
-		max-width:32%;
+		object-fit: contain;
+		max-width:33%;
 		align-items: center;
 		justify-content: center;
+		display:inline-block;
 		margin:0 auto;
-		display:inline;
+	}
 
+	.contactCard img:nth-child(2){
+		opacity:.66;
+	}
+
+	.contactCard img:nth-child(3){
+		opacity:.33;
 	}
 
 	.contactCard>h2{
@@ -757,6 +761,7 @@ main{
 
 .directContactBox{
 	background:white;
+	text-align:left;
 }
 
 
@@ -814,10 +819,7 @@ main{
 	flex-direction: column;
 	justify-content: space-evenly;
 	background:white;
-	flex-grow:3;
-	margin-top:10px;
-	flex-basis:100%;
-
+	margin-top:10px;	
 	
 
 	}
