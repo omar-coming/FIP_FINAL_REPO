@@ -102,8 +102,8 @@ p{
 }
 	
 .mainWrapper{
-	border-right:5px solid #25F3CD;
-	border-left:5px solid #25F3CD ;
+	border-right:5px solid #111;
+	border-left:5px solid #111 ;
 	text-align:center;
 	display:flex;
 	flex-flow:row wrap;
@@ -134,7 +134,7 @@ main{
 /* header includes nav menu *** logo block is first link in nav menu *** */
 
 .header{
-	border-bottom:5px solid #25F3CD;
+	border-bottom:5px solid #111;
 	padding:0;
 	margin:0;
 	width:auto;
@@ -232,7 +232,7 @@ main{
 	padding:0;
 	margin:0;
 	width:100%;
-	border-top:5px solid #25F3CD;
+	border-top:5px solid #111;
 	display:flex;
 	flex-direction:row wrap;
 
@@ -288,7 +288,7 @@ main{
 
 .footerLink a:hover{
 	color:#FFB323;
-	border-bottom:solid 2px #25F3CD;
+	border-bottom:solid 2px #111;
 }
 
 /* row */
@@ -344,7 +344,7 @@ main{
 	width:100%;
 	padding:10px;
 	margin:0 auto;
-	border-left:5px solid #25F3CD;
+	border-left:5px solid #111;
 	
 	flex: 1 1 30%;
 
