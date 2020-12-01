@@ -31,9 +31,48 @@ p{
 	text-align: center;
 	margin:0 auto;
 	font-family:Inconsolata, arial;
-	font-size:1em;
+	font-size:1.5em;
 }
 
+/* LINEBREAK ANIMATION */
+
+
+@keyframes border-spin-linebreak-left{
+	0%{ 
+		
+			border-bottom: 2px solid #25F3CD;
+		}
+		
+		50%{ 
+			border-bottom: 2px solid #FFB323;
+
+		}
+		100%{ 
+			border-bottom: 2px solid #25F3CD;
+		}
+
+}
+
+@keyframes border-spin-linebreak-right{
+	0%{ 
+		
+			border-bottom: 2px solid #FFB323;
+		}
+		
+		50%{ 
+			border-bottom: 2px solid #25F3CD;
+
+		}
+		100%{ 
+			border-bottom: 2px solid #FFB323;
+		}
+}
+
+/* END OF LINEBREAK ANIMATION KEYFRAMES */
+
+.lineBreak>h2{
+	color:#25F3CD;
+}
 .lineBreak>h2>span{
 		color:#FFB323;
 }
@@ -44,19 +83,22 @@ p{
 .lineBreak::before, .lineBreak:after {
     content: '';
     flex: 1 0 0;
-    border-bottom: 2px solid #25F3CD;
+    border-bottom: 2px solid black;
 }
 .lineBreak::before {
+	animation:border-spin-linebreak-left 2s infinite;
     margin-right: 5px;
 }
 .lineBreak::after {
+	animation:border-spin-linebreak-right 2s infinite;
+
     margin-left: 5px;
 }
 
 .lineBreakBottom{
     content: '';
     flex: 1 0 0;
-    border-bottom: 2px solid #25F3CD;
+    border-bottom: 2px solid black;
 }
 	
 .mainWrapper{
@@ -643,6 +685,8 @@ main{
 	animation: 1s border-spin infinite;
 }
 
+
+
 .borderSpinActive:focus{
 	animation: 1s border-spin infinite;
 }
@@ -668,9 +712,8 @@ main{
 .progress {cursor: progress;}
 
 .shadow {
-  box-shadow: 1px 1px 2px 0px #ccc;
+  box-shadow: 1px 1px 2px 0px #25F3CD;
 }
-
 
 
 
@@ -763,7 +806,7 @@ main{
 	#contactName{
 			color:white;
 			font-family:Inconsolata, arial;
-			font-size:clamp(2em, 3em, 3.5em);
+			font-size:3em;
 			font-weight:1000;
 		
 		
@@ -773,10 +816,17 @@ main{
 			align-content:center;
 			
 			-webkit-text-stroke-width: 2px;
-			-webkit-text-stroke-color: black;
+			-webkit-text-stroke-color: #FFB323;
+			
 		
 	}
 
+	#contactName span{
+		letter-spacing: .5em;
+			margin:0 auto;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #25F3CD;		
+	}
 
 
 .contactInfoBox{
@@ -785,6 +835,25 @@ main{
 	padding:10px;
 	background:white;
 	margin-bottom:10px;
+
+	animation:border-spin-active 2s infinite;
+
+}
+
+@keyframes border-spin-active{
+	0%{ 
+		
+			border: 2px solid #25F3CD;
+		}
+		
+		50%{ 
+			border: 2px solid #FFB323;
+
+		}
+		100%{ 
+			border: 2px solid #25F3CD;
+		}
+
 }
 
 
