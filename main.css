@@ -310,7 +310,7 @@ main{
 
 .socialIcon{
 
-	border:2px dashed white;
+	border:2px solid white;
 
 	border-radius:100%;
 	width:relative;
@@ -539,13 +539,13 @@ main{
 
 .readMore>a{
 
-	font-family:montserrat;
+	font-family:montserrat, arial;
 	text-decoration:none;
 	color:black;
 	font-weight:700;
 	text-decoration:uppercase;
 	background-color:white;
-	border:white dashed 2px;
+	border:white solid 2px;
 	padding:5px;
 }
 
@@ -1078,7 +1078,7 @@ main{
 .spinnerWrapInner{
 		height:inherit;
 		width: inherit;
-		border:2px dashed #25F3CD;
+		border:2px solid #25F3CD;
 		border-radius:100%;
 		margin:5px;
 		margin:5px;
