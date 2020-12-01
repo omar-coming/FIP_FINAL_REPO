@@ -806,7 +806,7 @@ main{
 	#contactName{
 			color:white;
 			font-family:Inconsolata, arial;
-			font-size:3em;
+			font-size:clamp(1em,2.5em,2.5em);
 			font-weight:1000;
 		
 		
