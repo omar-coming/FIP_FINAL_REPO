@@ -102,8 +102,8 @@ p{
 }
 	
 .mainWrapper{
-	border-right:5px solid #111;
-	border-left:5px solid #111 ;
+	border-right:5px solid #999;
+	border-left:5px solid #999 ;
 	text-align:center;
 	display:flex;
 	flex-flow:row wrap;
@@ -116,7 +116,7 @@ p{
 
 /* background between header and footer*/
 main{		
-	background:#111;
+	background:white;
 }
 
 .mainWrapper > * {
@@ -134,7 +134,7 @@ main{
 /* header includes nav menu *** logo block is first link in nav menu *** */
 
 .header{
-	border-bottom:5px solid #111;
+	border-bottom:5px solid #25F3CD;
 	padding:0;
 	margin:0;
 	width:auto;
@@ -232,7 +232,7 @@ main{
 	padding:0;
 	margin:0;
 	width:100%;
-	border-top:5px solid #111;
+	border-top:5px solid #FFB323;
 	display:flex;
 	flex-direction:row wrap;
 
@@ -344,7 +344,6 @@ main{
 	width:100%;
 	padding:10px;
 	margin:0 auto;
-	border-left:5px solid #111;
 	
 	flex: 1 1 30%;
 
@@ -749,15 +748,13 @@ main{
 
 /* contact page styling */
 
-/*main articles*/
 .contactCard{
 	display:flex;
-	flex-direction:column wrap;
+	flex-direction:row wrap;
 
 	justify-content:space-evenly;
 	margin-bottom:10px;
 	background:white;
-	width: inherit;
 	padding:10px;
 }
 
@@ -921,7 +918,7 @@ main{
 
 	.formWrap{
 	display:flex;
-	flex-direction: column;
+	flex-direction: column wrap;
 	justify-content: space-evenly;
 	background:white;
 	margin-bottom:10px;
@@ -932,8 +929,7 @@ main{
 	padding: 12px 20px;
 	margin: 8px 0;
 	display: inline-block;
-	border: 2px solid #999;
-	border-radius: 4px;
+	border: 2px solid black;
 	box-sizing: border-box;
 	overflow:hidden;
 	} 
@@ -951,7 +947,7 @@ main{
   /* submit button */
 	input[type=submit] {
 	width: 100%;
-	height:100%;
+	height:relative;
 	background-color: black;
 	color: white;
 	padding: 10px 0;
@@ -973,7 +969,7 @@ main{
 	}
 
 	label{
-	font-family:Inconsolata, arial;
+	font-family:Montserrat, arial;
 	font-size:1em;
 	padding-left:10px;
 	}
@@ -984,6 +980,9 @@ main{
 	  color:#999;
 }
 
+.contactMain{
+	display:flex;
+}
 
 
 
@@ -1177,4 +1176,23 @@ main{
 .galleryItem>img{
 	
 	max-width:100%;
+}
+
+
+/* map */
+
+.mapWrap{
+	margin:10px;
+	max-height:100%;
+	max-width: 100%;
+}
+
+
+
+
+/* dark mode and other toggles */
+
+.dark-mode{
+	color:white;
+	background:black;
 }
