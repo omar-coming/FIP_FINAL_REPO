@@ -3,7 +3,7 @@
 body{
 	overflow-x:hidden;
 	margin:0;
-	background-color: #ffffff;
+	background-color: #fff;
 	background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -102,8 +102,8 @@ p{
 }
 	
 .mainWrapper{
-	border-right:5px solid #111;
-	border-left:5px solid #111 ;
+	border-right:5px solid #FFB323;
+	border-left:5px solid #FFB323 ;
 	text-align:center;
 	display:flex;
 	flex-flow:row wrap;
@@ -116,30 +116,38 @@ p{
 
 /* background between header and footer*/
 main{		
-	background:white;
+	background:#fff;
 }
 
-.mainWrapper > * {
+/* .mainWrapper > * {
 	padding: 10px;
 	padding-bottom:0px;
 	margin: 0;
 	flex:1 100%;
 	border-radius:0px;
-
-
-}
+} */
 
 .mainWrapper > .hidden{display:none;}
 
 /* header includes nav menu *** logo block is first link in nav menu *** */
 
+.topBar{
+	height:20px;
+	margin:0 auto;
+	color:white;
+	font-family:roboto, arial;
+	padding:0px;
+	background:black;
+	justify-content: center;
+	align-items: center;
+}
+
 .header{
-	border-bottom:5px solid #111;
+	border-bottom:5px solid #FFB323;
 	padding:0;
 	margin:0;
 	width:auto;
 	display:flex;
-	flex-direction:row wrap;
 	justify-content:space-evenly;
 	text-align:center;
 	flex: 5 1 0px;
@@ -155,7 +163,7 @@ main{
 .logoBlock img{
 	height:auto;
 	width:2em;	
-	display:inline-block;
+	display:inline-flex;
 	}
 
 .mainNav{
@@ -232,7 +240,7 @@ main{
 	padding:0;
 	margin:0;
 	width:100%;
-	border-top:5px solid #111;
+	border-top:5px solid #FFB323;
 	display:flex;
 	flex-direction:row wrap;
 
@@ -434,18 +442,15 @@ main{
 	margin:10px;
 	display:block;
 	position:relative;
-	background:#111;
+
 
 	
-	/* background: rgb(228,228,228);
-	background: linear-gradient(45deg, rgba(228,228,228,1) 0%, rgba(255,255,255,1) 55%, rgba(228,228,228,1) 100%);
-	*/
+	background: #e3e3e3;
 }
 
 /*other article components*/
 .article>img{
 	max-width:100%;
-	border:solid white 2px;
 	}
 
 .article>h2{
@@ -472,7 +477,7 @@ main{
 	padding-bottom:25px;
 	padding-right:10px;
 	padding-left:10px;
-	color:white;
+	color:black;
 
 }
 
@@ -751,7 +756,6 @@ main{
 	flex-direction:row wrap;
 
 	justify-content:space-evenly;
-	margin-bottom:10px;
 	background:white;
 	padding:10px;
 }
@@ -846,6 +850,8 @@ main{
 
 }
 
+
+
 @keyframes border-spin-active{
 	0%{ 
 		
@@ -878,7 +884,7 @@ main{
 
 	.formMain legend {
     background-color: #000;
-    color: #fff;
+    color: #FFB323;
 	padding:10px;
 	margin:10px;
 	text-align:center;
@@ -887,14 +893,23 @@ main{
 
 	}
 
-	.aoi, .aoi legend{
+	.aoi{
+	font-family:Inconsolata, arial;
+	text-align:left;
+	padding:10px;
+	margin:10px;
+	border-color:black;
+	width:100%;
+	}
+
+	.aoi legend{
 	font-family:Inconsolata, arial;
 	text-align:left;
 	padding:10px;
 	margin:10px;
 	border-color:black;
 	}
-
+	
 	.yourInfo, .yourInfo legend{
 	text-align:left;
 	font-family:Inconsolata, arial;
@@ -911,7 +926,7 @@ main{
 
 
 
-/*formWrap = contact form wrap - contact form is found on contact page obv */
+/*formWrap = contact form wrap - contact form is found on contact page */
 
 	.formWrap{
 	display:flex;
@@ -943,7 +958,7 @@ main{
 
   /* submit button */
 	input[type=submit] {
-	width: 100%;
+	width: 98%;
 	height:relative;
 	background-color: black;
 	color: white;
@@ -956,7 +971,6 @@ main{
 	font-weight:500;
 	letter-spacing:2px;
 	text-transform: uppercase;
-	margin-bottom:0;
 	border:2px solid black;
 	}
   
@@ -975,6 +989,11 @@ main{
 	font-family:Inconsolata, arial;
 	  font-size:1em;
 	  color:#999;
+}
+
+input[type="radio"] {
+	box-sizing: border-box;
+
 }
 
 .contactMain{
@@ -1191,6 +1210,28 @@ main{
 /* dark mode and other toggles */
 
 .dark-1{
-	color:white;
+	color:black;
 	background:black;
+}
+
+/* QR CODE */
+
+.formRow{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.qrCode{
+	background:#f3f3f3;
+	justify-content: center;
+	align-content: center;
+	margin-right:10px;
+}
+
+.qrCode>img{
+
+	height:200px;
+	width:200px;
+	
 }
