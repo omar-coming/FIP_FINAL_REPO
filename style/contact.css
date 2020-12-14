@@ -1,0 +1,256 @@
+
+
+
+            /* Set a size for our map container, the Google Map will take up 100% of this container */
+            #map {
+                width: 60%;
+				
+				margin-left:10px;
+				border:solid black 2px;
+
+				box-sizing:border-box;
+
+				/* google map is a pos and this fixes it being slight off alignment with rest of divs */
+				right:0.11em;
+
+			}
+            
+            
+/* contact page styling */
+
+.contactCard{
+	display:flex;
+	flex-direction:row wrap;
+
+	justify-content:space-evenly;
+	background:white;
+	padding:10px;
+}
+
+.contactImg>img{
+	display:block;
+	width:100%;
+	
+	/* set items at 0 baseline and allow to grow */
+	flex:3 1 0px;
+	
+	/* background: rgb(228,228,228);
+	background: linear-gradient(45deg, rgba(228,228,228,1) 0%, rgba(255,255,255,1) 55%, rgba(228,228,228,1) 100%);
+	*/
+	
+}
+
+/*
+.contactCard{
+	display:flex wrap;
+	text-align: center;
+ 	justify-content: space-evenly;
+	align-items: flex-start ;
+		margin-bottom:10px;
+
+		
+	}
+
+	.contactImgWrap{
+		padding:10px;	
+		display: flex column wrap;	
+		background: white;
+		max-width:auto;
+		flex:1;
+		height:auto;
+
+
+
+	}
+
+	.contactImgWrap>img{
+		margin:0 auto;
+		height:auto;
+		width:1/3;
+	}
+
+	*/
+
+	.contactImg:nth-child(2){
+		opacity:.66;
+	}
+
+	.contactImg:nth-child(3){
+		opacity:.33;
+	}
+
+	#contactName{
+			color:white;
+			font-family:Inconsolata, arial;
+			font-size:2.25em;
+			font-weight:1000;
+		
+		
+			text-transform:uppercase;
+		
+			justify-content:center;
+			align-content:center;
+			
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: #FFB323;
+			
+		
+	}
+
+	#contactName span{
+		letter-spacing: .5em;
+			margin:0 auto;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #25F3CD;		
+	}
+
+
+.contactInfoBox{
+	display:flex;
+	text-align:center;
+	padding:10px;
+	background:white;
+	margin-bottom:10px;
+
+	animation:border-spin-active 2s infinite;
+
+}
+
+
+/* contact form styling for contact page */
+
+.formMain{
+	width:100%;
+
+	box-sizing: border-box;
+}
+	.formMain legend {
+    background-color: #000;
+    color: white;
+	padding:10px;
+	text-align:center;
+	font-family:Inconsolata, arial;
+	text-transform: uppercase;
+
+	}
+
+	.aoi{
+	font-family:Inconsolata, arial;
+	text-align:left;
+	border-color:black;
+	width:40%;
+	height:100%;
+
+
+	}
+
+	.aoi legend{
+	font-family:Inconsolata, arial;
+	text-align:left;
+	padding:10px;
+	border-color:black;
+	}
+	
+	.yourInfo, .yourInfo legend{
+	text-align:left;
+	font-family:Inconsolata, arial;
+	padding:10px;
+	border-color:black;
+	}
+
+	.output {
+	font-family:impact;
+	color:red;
+	}
+
+
+
+
+/*formWrap = contact form wrap - contact form is found on contact page */
+
+	.formWrap{
+
+	
+	display:flex;
+	flex-direction: column wrap;
+	justify-content: space-evenly;
+	background:white;
+	}
+
+	.formRow{
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom:10px;
+	}
+
+	input[type=text], select, textarea {
+	width: 100%;
+	padding: 10px 20px;
+	display: inline-block;
+	border: 2px solid black;
+	box-sizing: border-box;
+	overflow:hidden;
+	margin-top:10px;
+
+	resize:none;
+	} 
+
+	 textarea:focus{
+		 outline:none;
+	 }
+	
+
+
+	input:focus{
+	outline:none;
+	}
+
+  /* submit button */
+	input[type=submit] {
+	width: 100%;
+	height:relative;
+	background-color: black;
+	color: white;
+	padding: 10px 0;
+	margin: 0 auto;
+
+
+
+
+	border: none;
+	cursor: pointer;
+	font-size:1em;
+	font-family:Inconsolata, arial;
+	font-weight:500;
+	letter-spacing:2px;
+	text-transform: uppercase;
+	border:2px solid black;
+	}
+  
+	input[type=submit]:hover {
+	background-color: white;
+	color:#25F3CD;
+	}
+
+	label{
+	font-family:Montserrat, arial;
+	font-size:1em;
+	padding-left:10px;
+	}
+
+	input::placeholder, textarea::placeholder{
+	font-family:Inconsolata, arial;
+	  font-size:1em;
+	  color:#999;
+}
+
+input[type="radio"] {
+	box-sizing: border-box;
+
+}
+
+.contactMain{
+	display:flex;
+	margin:10px;
+}
