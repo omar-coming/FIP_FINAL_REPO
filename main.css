@@ -852,13 +852,14 @@ order:1;
 /* contact form styling for contact page */
 
 .formMain{
-	background:white;
+	width:100%;
+
+	box-sizing: border-box;
 }
 	.formMain legend {
     background-color: #000;
     color: white;
 	padding:10px;
-	margin:10px;
 	text-align:center;
 	font-family:Inconsolata, arial;
 	text-transform: uppercase;
@@ -868,10 +869,10 @@ order:1;
 	.aoi{
 	font-family:Inconsolata, arial;
 	text-align:left;
-	padding:10px;
-	margin:10px;
 	border-color:black;
 	width:40%;
+	height:100%;
+
 
 	}
 
@@ -879,7 +880,6 @@ order:1;
 	font-family:Inconsolata, arial;
 	text-align:left;
 	padding:10px;
-	margin:10px;
 	border-color:black;
 	}
 	
@@ -887,7 +887,6 @@ order:1;
 	text-align:left;
 	font-family:Inconsolata, arial;
 	padding:10px;
-	margin:10px;
 	border-color:black;
 	}
 
@@ -914,16 +913,17 @@ order:1;
 		display:flex;
 		flex-direction: row;
 		justify-content: space-between;
+		margin-bottom:10px;
 	}
 
 	input[type=text], select, textarea {
 	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
+	padding: 10px 20px;
 	display: inline-block;
 	border: 2px solid black;
 	box-sizing: border-box;
 	overflow:hidden;
+	margin-top:10px;
 
 	resize:none;
 	} 
@@ -984,6 +984,7 @@ input[type="radio"] {
 
 .contactMain{
 	display:flex;
+	margin:10px;
 }
 
 
@@ -1158,36 +1159,6 @@ input[type="radio"] {
 
 /* dark mode and other toggles */
 
-.dark-1{
-	color:black;
-	background:black;
-	border:none;
-}
-
-/* QR CODE */
-
-
-
-.qrCode{
-
-	display: block;
-
-	margin-right:10px;
-	height:100%;
-	width:100%;
-
-	justify-content: center;
-	align-content: center;
-	margin-top: 20px;
-
-}
-
-.qrCode>img{
-
-	max-width:200px;
-max-height:200px;
-	}
-
 .galleryHover>h2{
 	color:black;
 	font-size:16px;
@@ -1221,9 +1192,13 @@ max-height:200px;
             #map {
                 width: 60%;
 				
-				margin-right:10px;
-
+				margin-left:10px;
 				border:solid black 2px;
+
+				box-sizing:border-box;
+
+				/* google map is a pos and this fixes it being slight off alignment with rest of divs */
+				right:0.11em;
 
 			}
 			
