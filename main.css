@@ -3,7 +3,7 @@
 body{
 	overflow-x:hidden;
 	margin:0;
-	background-color: #fff;
+	background-color: #f3f3f3;
 	background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -134,7 +134,7 @@ main{
 .topBar{
 	height:20px;
 	margin:0 auto;
-	color:white;
+	color:#fff;
 	font-family:roboto, arial;
 	padding:0px;
 	background:black;
@@ -222,7 +222,7 @@ main{
 /* rounded corners only on first li element - open of pill */
 .link:nth-child(2){
 	/* border-radius:5px 0px 0px 5px; */
-	border-right:1px solid black;
+	border-right:2px solid black;
 }
 
 /* close pill with rounded corners on right side of last li element */
@@ -231,7 +231,7 @@ main{
 	background-color:white;
 	/* border-radius:0px 5px 5px 0px; */
 	
-	border-left:1px solid black;
+	border-left:2px solid black;
 
 	
 }
@@ -442,12 +442,14 @@ main{
 	display:block;
 	position:relative;
 
-	background: #e3e3e3;
+	background: #fff;
+	border:2px solid #111;
 }
 
 /*other article components*/
 .article>img{
 	max-width:100%;
+	border:1px solid #111;
 	}
 
 .article>h2{
@@ -481,21 +483,55 @@ main{
 }
 
 /* skip nth-child 1 = hidden section heading is #1 child*/
-.article:nth-child(2), .article:nth-child(2)>img{
+.article:nth-child(2){
 
-	order:1;
-	border-radius:20px 0px 0px 0px;
+order:1;
 
 }
 
-.article:nth-child(3), .article:nth-child(3)>img{
+.article:nth-child(3){
+
 	order:2;
+
 }
 
-.article:nth-child(4), .article:nth-child(4)>img{
+.article:nth-child(4){
 
 	order:3;
-	border-radius:0px 20px 0px 0px;
+
+}
+
+/* read more link in articles */
+
+.readMore{
+
+	list-style:none; 
+	text-align:right;
+	/*
+	position:absolute;
+	bottom:20px;
+	right:15px; */
+
+	text-transform: uppercase;
+	margin-bottom:10px;
+}
+
+.readMore>a{
+
+	font-family:montserrat, arial;
+	text-decoration:none;
+	color:white;
+	font-weight:700;
+	text-decoration:uppercase;
+	background-color:black;
+	border:black solid 2px;
+	padding:5px;
+}
+
+.readMore>a:hover{
+
+	color:#25F3CD;
+	background-color:white;
 
 }
 
@@ -534,36 +570,7 @@ main{
 	text-align:left;
 }
 
-/* read more link in articles */
 
-.readMore{
-
-	list-style:none; 
-	text-align:right;
-	position:absolute;
-	bottom:20px;
-	right:20px;
-	text-transform: uppercase;
-}
-
-.readMore>a{
-
-	font-family:montserrat, arial;
-	text-decoration:none;
-	color:white;
-	font-weight:700;
-	text-decoration:uppercase;
-	background-color:black;
-	border:black solid 2px;
-	padding:5px;
-}
-
-.readMore>a:hover{
-
-	color:#25F3CD;
-	background-color:white;
-
-}
 
 /* animations */
 
@@ -701,8 +708,6 @@ main{
 	animation: 1s border-spin infinite;
 }
 
-
-
 .borderSpinActive:focus{
 	animation: 1s border-spin infinite;
 }
@@ -722,35 +727,6 @@ main{
 .rotating-left:hover{
 	animation: 5s rotateLeft infinite;
 }
-
-/* special style classes */
-
-.progress {cursor: progress;}
-
-.shadow {
-  box-shadow: 1px 1px 2px 0px #25F3CD;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* contact page styling */
 
@@ -775,7 +751,6 @@ main{
 	*/
 	
 }
-
 
 /*
 .contactCard{
@@ -879,11 +854,6 @@ main{
 .formMain{
 	background:white;
 }
-
-
-
-
-
 	.formMain legend {
     background-color: #000;
     color: white;
@@ -901,7 +871,8 @@ main{
 	padding:10px;
 	margin:10px;
 	border-color:black;
-	width:100%;
+	width:40%;
+
 	}
 
 	.aoi legend{
@@ -931,10 +902,18 @@ main{
 /*formWrap = contact form wrap - contact form is found on contact page */
 
 	.formWrap{
+
+	
 	display:flex;
 	flex-direction: column wrap;
 	justify-content: space-evenly;
 	background:white;
+	}
+
+	.formRow{
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	input[type=text], select, textarea {
@@ -945,6 +924,8 @@ main{
 	border: 2px solid black;
 	box-sizing: border-box;
 	overflow:hidden;
+
+	resize:none;
 	} 
 
 	 textarea:focus{
@@ -965,6 +946,10 @@ main{
 	color: white;
 	padding: 10px 0;
 	margin: 0 auto;
+
+
+
+
 	border: none;
 	cursor: pointer;
 	font-size:1em;
@@ -1037,10 +1022,14 @@ input[type="radio"] {
 	
 
 
+	.article img{
+		border-radius:0px 0px 0px 0px;
+	}
+
 	
-	.article:nth-child(2){
+	.article:nth-child(2), .article:nth-child(2)>img{
 		
-		
+		border-radius: 0px 0px 0px 0px;
 		order:1;
 	}
 	
@@ -1048,7 +1037,10 @@ input[type="radio"] {
 		order:2;
 	}
 	
-	.article:nth-child(4){
+	.article:nth-child(4), .article:nth-child(4)>img{
+
+		border-radius: 0px 0px 0px 0px;
+
 		order:3;
 	}
 	
@@ -1064,14 +1056,6 @@ input[type="radio"] {
 
 	.contactCard{
 		display:none;
-	}
-
-	.mapWrap{
-		display:none;
-	}
-
-	.galleryItem{
-
 	}
 
 }
@@ -1100,7 +1084,7 @@ input[type="radio"] {
 }
 
 .spinnerWrapOuter{
-	border:2px outset black;
+	border:2px solid black;
 	border-radius:100%;
 	padding:10px;
 	margin:5px;
@@ -1168,72 +1152,8 @@ input[type="radio"] {
 	animation: rotate-left 5s infinite;
 }
 
-
-
-
-
-
-
-
-
-/* gallery styling */
-
-
-
-.galleryWrapper{
-	height:100%;
-	margin-bottom:10px;
-}
-
-.galleryRow{
-
-	display:flex;
-	flex-direction:row;
-
-}
-
-.galleryItem{
-	padding:10px;
-	background:white;
-	border:2px solid white;
-	position:relative;
-
-}
-
-/* if you put border on image instead of li item, itll f your s up when you scale down to narrow screen */
-.galleryItem>img{
-	
-	max-width:100%;
-}
-
-.galleryItem:hover{
-	transform:scalex(1.2)scaley(1.2);
-	z-index:9;
-	transition:1s;
-}
-
-
 /* map */
 
-.mapWrap{
-	margin:10px;
-	max-height:100%;
-	max-width: 100%;
-
-	filter:opacity(25%) blur(4px);
-	transition:1s;
-
-
-}
-
-
-.mapWrap:hover{
-	filter:opacity(100%);
-	transition:2s;
-}
-
-.mapouter{position:relative;text-align:right;height:100%;width:100%;}
-.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}
 
 
 /* dark mode and other toggles */
@@ -1246,11 +1166,7 @@ input[type="radio"] {
 
 /* QR CODE */
 
-.formRow{
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
+
 
 .qrCode{
 
@@ -1287,3 +1203,27 @@ max-height:200px;
 	left:50%;
 	right:50%;
 }
+
+/* special style classes */
+
+.progress {cursor: progress;}
+
+.shadow {
+  box-shadow: 1px 1px 2px 0px #25F3CD;
+}
+
+
+
+
+
+
+            /* Set a size for our map container, the Google Map will take up 100% of this container */
+            #map {
+                width: 60%;
+				
+				margin-right:10px;
+
+				border:solid black 2px;
+
+			}
+			
