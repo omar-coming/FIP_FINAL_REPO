@@ -70,10 +70,14 @@
 		<form class="formMain">
 
 		<div class="formRow">
+
 	
+			<div class="qrCode">
+				<img src="./images/qr.png">
+			</div>
 		<fieldset class="aoi">
-		  <legend>Area of Inquiry</legend>
-	  
+		  <legend>What Tickles Your Fancy?</legend>
+
 		  <input type="radio" name="webs">
 		  <label for="webs">Web Development</label><br/>
 	  
@@ -82,18 +86,22 @@
 	  
 		  <input type="radio" name="other">
 		  <label for="other">Other Media</label>
+
+		  <input class="borderSpinActive" type="text" id="fname" name="firstname" form="usrform" placeholder="Specify Now">
+		
+		
 		</fieldset>
 
+					
 
-		<div class="qrCode">
-			<img src="./images/qr.png">
-		</div>
+
+
 
 	</div>
 
 	
 		<fieldset class="yourInfo">
-			<legend>Your Information</legend>
+			<!--<legend>Your Information</legend>-->
 		<form form="usrform">
 			<label for="fname">First Name</label>
 			<input class="borderSpinActive" type="text" id="fname" name="firstname" form="usrform" placeholder="Enter First Name">
@@ -106,9 +114,11 @@
 	
 			<label for="subject">Message</label>
 			<textarea class="borderSpinActive" rows="9" cols="8" name="message" form="usrform" placeholder="Write Message Here"></textarea>
+		
+			<input class="borderSpin" type="submit" value="Submit">
+
 		</fieldset>
 	
-			<input class="borderSpin" type="submit" value="Submit">
 		
 		</form>
 	</div>

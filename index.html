@@ -1,6 +1,7 @@
 <!doctype html>
-
 <html lang="en">
+
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
@@ -39,8 +40,9 @@
 
 
 <main>
-<!-- built modular, swap articles for hero and vice versa -->
-<div class="heroWrap">
+
+
+	<div class="heroWrap">
 	<div class="hero">
 		<h2>SPENCER'S WEBSITE</h2>
 			<h3>JUST KEEP IT MOVIN'</h3>
@@ -51,7 +53,7 @@
 <section class="articles">
 	<h2 class="hidden">Articles</h2>
 
-<article class=" dark-mode article">
+<article class="article">
 	<img src="./images/home/dirtbike.gif">
 	<div class="lineBreak"><h2>BREAKING <span>STUFF</span></h2></div>
 		<p>
@@ -145,7 +147,7 @@ Hi there, my name is Spencer.
 	
 	<section class="copyright">
 	
-		<div class="spinnerSquare" onclick="myFunction()">
+		<div class="spinnerSquare switch">
 			<div class="rotateLeft spinnerWrapOuter">
 				<div class="spinnerWrapInner rotateRight">
 					<div class="spinnerWrapInnerSVG rotateLeft progress"></div>
@@ -161,10 +163,12 @@ Hi there, my name is Spencer.
 
 
 <script>
-function myFunction() {
-   var element1 = document.body;
-   element1.classList.toggle("dark-1");
-}
+$(function(){
+	$(".switch").click(function(){
+		$(".article").toggleClass("dark");
+
+	});
+});
 </script>
 </body>
 </html>

@@ -15,6 +15,7 @@ contact
 
 -contact card
     +/- make it better, it fing sucks
+    + fix qr code placement and sizing
 
 -gallery
     +jquery
