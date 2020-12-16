@@ -1,33 +1,5 @@
 
 
-
-            /* Set a size for our map container, the Google Map will take up 100% of this container */
-            #map {
-                width: 60%;
-				
-				margin-left:10px;
-				border:solid black 2px;
-
-				box-sizing:border-box;
-
-				/* google map is a pos and this fixes it being slight off alignment with rest of divs */
-				right:0.11em;
-
-				display:flex;
-
-			}
-
-			.qrCode{
-				display:flex;
-				width:20%;
-				height:100%;
-						}
-
-						.qrCode>img{
-							justify-content: center;
-							align-content: center;
-							max-width:100%;
-						}
             
 /* contact page styling */
 
@@ -41,6 +13,8 @@
 	padding-top:10px;
 
 	position:relative;
+
+	text-transform: uppercase;
 }
 
 
@@ -63,6 +37,7 @@
 	padding:10px;
 	text-align: right;
 	margin-right:20px;
+	font-size:1em;
 
 }
 
@@ -78,19 +53,19 @@
 	*/
 	
 }
-	.contactImg:nth-child(2){
+	.contactImg:nth-child(3){
 		opacity:.33;
 	}
 
-	.contactImg:nth-child(3){
+	.contactImg:nth-child(4){
 		opacity:.66;
 	}
 
 /* contact form styling for contact page */
 
 .formMain{
-	width:100%;
 	box-sizing: border-box;
+
 }
 	.formMain legend {
     background-color: #000;
@@ -103,6 +78,7 @@
 	}
 
 	.aoi{
+	flex:1;
 	font-family:Inconsolata, arial;
 	text-align:left;
 	border-color:black;
@@ -126,8 +102,8 @@
 	}
 
 	.output {
-	font-family:impact;
-	color:red;
+		font-family:Inconsolata, arial;
+		color:red;
 	}
 
 
@@ -137,9 +113,7 @@
 
 	.formWrap{
 	display:flex;
-	flex-direction: column wrap;
 	justify-content: space-evenly;
-	background:white;
 	}
 
 	.formRow{
@@ -153,7 +127,7 @@
 	width: 100%;
 	padding: 10px;
 	display: inline-block;
-	border: 2px outset #999;
+	border: 2px inset #999;
 	box-sizing: border-box;
 	overflow:hidden;
 	margin-top:10px;
@@ -187,16 +161,19 @@
 	text-transform: uppercase;
 	border:2px solid black;
 	}
-  
+
 	input[type=submit]:hover {
-	background-color: white;
-	color:#25F3CD;
-	}
+		background-color: white;
+		color:#25F3CD;
+			}
+  
+
 
 	label{
 	font-family:Montserrat, arial;
 	font-size:1em;
 	padding-left:10px;
+
 	}
 
 	input::placeholder, textarea::placeholder{
@@ -214,19 +191,28 @@ input[type="radio"] {
 	margin:10px;
 }
 
+#map {
+	
+	flex:2;
+	margin-left:10px;
+	border:solid black 2px;
+	box-sizing:border-box;
+	/* google map is a pos and this 0.11em fixes it being slightly off alignment with rest of divs and gives it a virtual responsiveness*/
+	right:0.11em;
+	display:flex;
+}
+
 /* responsive shit */
 
 @media screen and (max-width: 600px){
+	/* hides 2/3 contact images for mobile screens */
 	.contactImg{
 		display:none;
 	}
 
-	.contactImg:last-child{
-		display:block;
-	}
-
 	.contactInformation{
 		background: rgb(0,0,0);
+		background: linear-gradient(90deg, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 60%);
 	}
 
 }
