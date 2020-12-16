@@ -1,0 +1,261 @@
+
+
+
+/* animations */
+
+@keyframes rotateLeft{
+	0%{
+	transform:rotate(0);
+	}
+	
+	10%{
+		transform:rotate(-5deg);
+	}
+	
+	25%{transform:rotate(-40deg);}
+	
+	50%{
+	transform:rotate(340deg);
+	}
+	
+	75%{transform:rotate(-3deg);}
+	
+	100%{
+	transform:rotate(0);
+	}
+}
+
+@keyframes boxer{
+	0%{transform:translatex(-25%)scale(1);}
+	10%{transform:translatex(-25%)scale(1);}	
+	50%{transform:translatex(45%)scale(.5);}
+	100%{transform:translatex(-25%)scale(1);}
+}
+
+@keyframes border-spin {
+    0%{ 
+	border-top:2px solid #25F3CD;
+	border-right:2px solid #25F3CD;
+	border-left:2px solid #FFB323;
+	border-bottom:2px solid #FFB323;	
+	}
+    50%{ 
+	border-top:2px solid #FFB323;
+	border-right:2px solid #FFB323;
+	border-left:2px solid #25F3CD;
+	border-bottom:2px solid #25F3CD;
+	}
+    100%{ 
+	border-top:2px solid #25F3CD;
+	border-right:2px solid #25F3CD;
+	border-left:2px solid #FFB323;
+	border-bottom:2px solid #FFB323;
+	}
+}
+
+@keyframes border-spin2 {
+    0%{ 
+	border-top:2px solid #25F3CD;
+	border-right:2px solid #FFB323;
+	border-left:2px solid #FFB323;
+	border-bottom:2px solid #FFB323;	
+	}
+
+    25%{ 
+	border-top:2px solid #FFB323;
+	border-right:2px solid #25F3CD;
+	border-left:2px solid #FFB323;
+	border-bottom:2px solid #FFB323;
+	}
+
+	50%{ 
+	border-top:2px solid #FFB323;
+	border-right:2px solid #FFB323;
+	border-left:2px solid #FFB323;
+	border-bottom:2px solid #25F3CD;
+	}
+
+    75%{ 
+	border-top:2px solid #FFB323;
+	border-right:2px solid #FFB323;
+	border-left:2px solid #25F3CD;
+	border-bottom:2px solid #FFB323;
+	}
+	100%{ 
+		border-top:2px solid #25F3CD;
+		border-right:2px solid #FFB323;
+		border-left:2px solid #FFB323;
+		border-bottom:2px solid #FFB323;	
+		}
+}
+
+@keyframes border-spin-lite {
+    0%{ 
+	border-top:2px solid #25F3CD;
+	border-bottom:2px solid #25F3CD;
+
+	}
+    50%{ 
+	border-left:2px solid #FFB323;
+	border-right:2px solid #FFB323;
+
+	}
+    75%{ 
+	border-top:2px solid #FFB323;
+	border-bottom:2px solid #FFB323;
+	}
+	100%{
+		border-left:2px solid #25F3CD;
+		border-right:2px solid #25F3CD;
+
+	}
+}
+
+
+@keyframes pulse-svg{
+	0%{
+		background: url("./images/social/blitzed.svg") no-repeat center;
+				background-color: #25F3CD;
+	}
+
+	50%{
+		background: url("./images/social/blitzed.svg") no-repeat center;
+		background-color: #FFB323;
+	}
+	
+	100%{
+		background: url("./images/social/blitzed.svg") no-repeat center;
+		background-color: #25F3CD;
+	}
+}
+
+.pulseSVG:hover{
+	animation: 5s pulse-svg infinite;
+}
+
+.borderSpin:hover{
+	animation: 1s border-spin infinite;
+}
+
+.borderSpinActive:focus{
+	animation: 1s border-spin infinite;
+}
+
+.borderSpin2:hover{
+	animation: 1s border-spin2 infinite;
+}
+
+.borderSpinLite:hover{
+	animation: 1s border-spin-lite infinite;
+}
+
+.boxer-move{
+	animation: 5s boxer infinite;
+}
+
+.rotating-left:hover{
+	animation: 5s rotateLeft infinite;
+}
+
+@keyframes border-spin-active{
+	0%{ 
+		
+			border: 2px solid #25F3CD;
+		}
+		
+		50%{ 
+			border: 2px solid #FFB323;
+
+		}
+		100%{ 
+			border: 2px solid #25F3CD;
+		}
+
+}
+
+
+@keyframes rotate-left{
+    0%{
+        transform:rotate(0deg);
+    }
+
+    50%{
+        transform:rotate(180deg);
+    }
+
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes rotate-right{
+    0%{
+        transform:rotate(0deg);
+    }
+
+    50%{
+        transform:rotate(-360deg);
+    }
+
+    100%{
+        transform:rotate(-720deg);
+    }
+}
+
+.rotateRight{
+    animation: rotate-right 2.5s infinite;
+}
+
+.rotateLeft{
+animation: rotate-left 5s infinite;
+}
+
+
+/* LINEBREAK ANIMATION */
+
+
+@keyframes border-spin-linebreak-left{
+	0%{ 
+		
+			border-bottom: 2px solid #25F3CD;
+		}
+		
+		50%{ 
+			border-bottom: 2px solid #FFB323;
+
+		}
+		100%{ 
+			border-bottom: 2px solid #25F3CD;
+		}
+
+}
+
+@keyframes border-spin-linebreak-right{
+	0%{ 
+		
+			border-bottom: 2px solid #FFB323;
+		}
+		
+		50%{ 
+			border-bottom: 2px solid #25F3CD;
+
+		}
+		100%{ 
+			border-bottom: 2px solid #FFB323;
+		}
+}
+
+/* END OF LINEBREAK ANIMATION KEYFRAMES */
+
+/* media page */
+
+@keyframes albumSpin{
+	0%{
+		transform:rotate(0deg);  
+	}
+	
+	100%{
+		transform:rotate(360deg);  
+	}
+	
+	}

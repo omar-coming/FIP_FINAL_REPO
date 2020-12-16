@@ -15,6 +15,7 @@ contact
 
 -contact card
     +/- make it better, it fing sucks
+    + fix qr code placement and sizing
 
 -gallery
     +jquery
@@ -36,3 +37,10 @@ footer
 
  +/- change discord and instagram links so they are square borders on hover
  +/-leave circle icons with circle borders
+
+ 10 PHOTOS
+
+ 3 mr kitty
+ 3 dirtbike
+ 3 random
+ 1 portrait

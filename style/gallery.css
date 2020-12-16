@@ -1,0 +1,56 @@
+/* gallery styling */
+
+
+
+.galleryWrapper{
+	height:100%;
+}
+
+.galleryRow{
+	display:flex;
+	flex-direction:row;
+}
+
+.galleryRow>h2{
+	font-size:1.5em;
+	color:black;
+	font-family:Inconsolata, arial;
+	margin:0 auto;
+}
+
+.galleryItem{
+	padding:10px;
+	background:white;
+	border:2px solid white;
+	position:relative;
+
+}
+
+/* if you put border on image instead of li item, itll f your s up when you scale down to narrow screen */
+.galleryItem>img{
+	
+	max-width:100%;
+}
+
+.galleryItem:hover{
+	transform:scalex(1.2)scaley(1.2);
+	z-index:3;
+    transition:1s;
+    
+	}
+	
+	@media screen and (max-width: 600px){
+
+		.galleryRow{
+			display:flex;
+			flex-direction:column;
+		}
+
+		.galleryItem:hover{
+			transform:scalex(1.05)scaley(1.05);
+			z-index:3;
+			transition:1s;
+			
+			}
+	
+	}

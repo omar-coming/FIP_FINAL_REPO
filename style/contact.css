@@ -1,0 +1,218 @@
+
+
+            
+/* contact page styling */
+
+.contactCard{
+	display:flex;
+	flex-direction:row;
+
+	justify-content:space-evenly;
+	background:white;
+	padding:20px;
+	padding-top:10px;
+
+	position:relative;
+
+	text-transform: uppercase;
+}
+
+
+.contactInformation{
+	height:auto;
+	width:100%;
+	position:absolute;
+	bottom:-10px;
+	opacity:100%;
+	margin:10px;
+	border:solid white 20px;
+	box-sizing:border-box;
+	border-top:none;
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+}
+
+.contactInformation>h2,.contactInformation>h3{
+	color:white;
+	padding:10px;
+	text-align: right;
+	margin-right:20px;
+	font-size:1em;
+
+}
+
+.contactImg>img{
+	display:block;
+	width:100%;
+	
+	/* set items at 0 baseline and allow to grow */ /* I think */
+	flex:3 1 0px;
+	
+	/* background: rgb(228,228,228);
+	background: linear-gradient(45deg, rgba(228,228,228,1) 0%, rgba(255,255,255,1) 55%, rgba(228,228,228,1) 100%);
+	*/
+	
+}
+	.contactImg:nth-child(3){
+		opacity:.33;
+	}
+
+	.contactImg:nth-child(4){
+		opacity:.66;
+	}
+
+/* contact form styling for contact page */
+
+.formMain{
+	box-sizing: border-box;
+
+}
+	.formMain legend {
+    background-color: #000;
+    color: white;
+	padding:10px;
+	text-align:center;
+	font-family:Inconsolata, arial;
+	text-transform: uppercase;
+
+	}
+
+	.aoi{
+	flex:1;
+	font-family:Inconsolata, arial;
+	text-align:left;
+	border-color:black;
+	width:40%;
+
+
+	}
+
+	.aoi legend{
+	font-family:Inconsolata, arial;
+	text-align:left;
+	padding:10px;
+	border-color:black;
+	}
+	
+	.yourInfo, .yourInfo legend{
+	text-align:left;
+	font-family:Inconsolata, arial;
+	padding:10px;
+	border-color:black;
+	}
+
+	.output {
+		font-family:Inconsolata, arial;
+		color:red;
+	}
+
+
+
+
+/*formWrap = contact form wrap - contact form is found on contact page */
+
+	.formWrap{
+	display:flex;
+	justify-content: space-evenly;
+	}
+
+	.formRow{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom:10px;
+	}
+
+	input[type=text], select, textarea {
+	width: 100%;
+	padding: 10px;
+	display: inline-block;
+	border: 2px inset #999;
+	box-sizing: border-box;
+	overflow:hidden;
+	margin-top:10px;
+	resize:none;
+	} 
+
+	 textarea:focus{
+		outline:none;
+	 }
+	
+
+
+	input:focus{
+	outline:none;
+	}
+
+  /* submit button */
+	input[type=submit] {
+	width: 100%;
+	height:relative;
+	background-color: black;
+	color: white;
+	padding: 10px;
+	margin: 0 auto;
+	margin-top:10px;
+	cursor: pointer;
+	font-size:1em;
+	font-family:Inconsolata, arial;
+	font-weight:500;
+	letter-spacing:2px;
+	text-transform: uppercase;
+	border:2px solid black;
+	}
+
+	input[type=submit]:hover {
+		background-color: white;
+		color:#25F3CD;
+			}
+  
+
+
+	label{
+	font-family:Montserrat, arial;
+	font-size:1em;
+	padding-left:10px;
+
+	}
+
+	input::placeholder, textarea::placeholder{
+	font-family:Inconsolata, arial;
+	  font-size:1em;
+	  color:#999;
+}
+
+input[type="radio"] {
+	box-sizing: border-box;
+}
+
+.contactMain{
+	display:flex;
+	margin:10px;
+}
+
+#map {
+	
+	flex:2;
+	margin-left:10px;
+	border:solid black 2px;
+	box-sizing:border-box;
+	/* google map is a pos and this 0.11em fixes it being slightly off alignment with rest of divs and gives it a virtual responsiveness*/
+	right:0.11em;
+	display:flex;
+}
+
+/* responsive shit */
+
+@media screen and (max-width: 600px){
+	/* hides 2/3 contact images for mobile screens */
+	.contactImg{
+		display:none;
+	}
+
+	.contactInformation{
+		background: rgb(0,0,0);
+		background: linear-gradient(90deg, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 60%);
+	}
+
+}

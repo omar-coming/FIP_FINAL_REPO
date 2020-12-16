@@ -1,0 +1,56 @@
+.mediaItems{
+    display:flex;
+    flex-flow: row wrap;
+    background:blue;
+}
+
+.mediaItem{
+
+    display:flex;
+    flex:1 0 100%;
+    background:black;
+}
+
+.mediaItemInfo{
+    text-align: left;
+    justify-content: center;
+}
+
+.mediaItemInfo h2{
+    color:white;
+    text-transform: uppercase;
+    font-size:clamp(10px, 2em, 24px);
+    font-family:monserrat, arial;
+	list-style:none;
+    font-weight:500;
+    text-decoration: underline;    
+}
+
+.mediaItemInfo p{
+    color:white;
+}
+
+.albumArt{
+    justify-content: center;
+    margin:10px;
+    background:white;
+    border:solid #999 10px;
+    padding: 10px;
+    position:relative;
+
+}
+
+.albumSpin{
+    max-height:100%;
+    max-width:100%;
+    border-radius:100%;
+    border:solid 2px black;
+    box-sizing: border-box;
+    animation:albumSpin 5s infinite linear;
+
+}
+
+.albumOverlay{
+    background:black;
+    position: absolute;
+}

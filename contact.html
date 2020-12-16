@@ -8,11 +8,56 @@
   <meta name="description" content="Final Integrated Project">
   <meta name="author" content="Spencer Dipierdomenico">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./style/contact.css">
+  <link rel="stylesheet" href="./style/animations.css">
+
+
+		
+  
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5mn_T-fPP6tfHOxP9gNb6Day9x01KE-k"></script>
+
+  <script type="text/javascript">
+	  // When the window has finished loading create our google map below
+	  google.maps.event.addDomListener(window, 'load', init);
+  
+	  function init() {
+		  // Basic options for a simple Google Map
+		  // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+		  var mapOptions = {
+			  // How zoomed in you want the map to start at (always required)
+			  zoom: 11,
+
+			  // The latitude and longitude to center the map (always required)
+			  center: new google.maps.LatLng(42.984924, -81.245277), // Londonton
+
+			  // How you would like to style the map. 
+			  // This is where you would paste any style found on Snazzy Maps.
+			  styles: [{"elementType":"labels","stylers":[{"visibility":"off"}]},{"elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#000000"}]},{"featureType":"landscape","stylers":[{"color":"#ffffff"},{"visibility":"on"}]},{}]
+		  };
+
+		  // Get the HTML DOM element that will contain your map 
+		  // We are using a div with id="map" seen below in the <body>
+		  var mapElement = document.getElementById('map');
+
+		  // Create the Google Map using our element and options defined above
+		  var map = new google.maps.Map(mapElement, mapOptions);
+
+		  // Let's also add a marker while we're at it
+		  var marker = new google.maps.Marker({
+			  position: new google.maps.LatLng(42.984924, -81.245277),
+			  map: map,
+			  title: '519'
+		  });
+	  }
+  </script>
+
 </head>
 
 <body>
-	<div class="wrapper">
-		<h1 class="hidden">Spencer Dipierdomenico - FIP SITE</h1>
+
+	
+	<div class="mainWrapper">
+		<h1 class="hidden">Spencer's Website</h1>
 
 
 		<!-- header start -->
@@ -37,97 +82,86 @@
 <!-- page content starts here-->
 
 <div class="heroWrap">
-	<div class="hero">
+	<section class="hero">
 		<h2>SPENCER'S INFO</h2>
 			<h3>YOU CAN CONTACT ME HERE</h3>
-	</div>
-</div>
-
-
-<div class="heroWrap">
-	<section class="contactCard">
-
-		<div class="contactImgWrap">
-			<img src="./images/contact/contact_picture.gif">
-			<img src="./images/contact/contact_picture.gif">
-			<img src="./images/contact/contact_picture.gif">
-		</div>
-
-		<h2 id="contactName">Spencer Dipierdomenico</h2>
-		<!-- <fieldset class="directContactBox"> -->
-
-			<!--<img id="qrCode" src="./images/contact/qr.JPG">
-			<p>
-			<a href="mailto:spencer@blitzed.ca">SPENCER@BLITZED.CA</a></br>-->
-			<div class="lineBreak"><h2>E<span>MAIL</span></div>
-			<h2><span>SPENCER@BLITZED.CA</span></h2>
-			<div class="lineBreak"><h2>CELL<span>PHONE</span></div>
-			<h2><span>(519) 694-9569</span></h2></br>
-		<!-- </fieldset> -->
 	</section>
-
-
 </div>
 
 
 
+<div class="contactMain">
+	<div class="formWrap"> <!-- this one wraps actual form from top bar down to submit -->
+		<form class="formMain" form="usrform">
+			<h2 class="hidden">Contact Form</h2>
+			<div class="formRow">
+				<fieldset class="aoi">
+		  			<legend>What'chu Want?</legend>
 
-	<!-- Contact card with picture-->
-
-
-
-
-
-	<fieldset class="formWrap"> <!-- this one wraps actual form from top bar down to submit -->
-		<!-- <legend>Contact Top Fieldset</legend> -->
-		<div class="lineBreak">CONTACT FORM</div>
-	
-	
-		<form class="formMain">
-	
-		<fieldset class="aoi">
-		  <legend>Area of Inquiry</legend>
+		  			<input type="radio" name="webs">
+		  			<label for="webs">WEB</label><br/>
 	  
-		  <input type="radio" name="webs">
-		  <label for="webs">Web Development</label><br/>
+		  			<input type="radio" name="gfx">
+		  			<label for="gfx">GFX</label><br/>
 	  
-		  <input type="radio" name="gfx">
-		  <label for="gfx">Graphic Design</label><br/>
-	  
-		  <input type="radio" name="other">
-		  <label for="other">Other Media</label>
-		</fieldset>
+		  			<input type="radio" name="other">
+		  			<label for="other">OTHER</label>
+
+					<input class="borderSpinActive" type="text" id="fname" name="firstname" form="usrform" placeholder="Specify Now">
+					<label class="hidden" for="other">OTHER</label>
+
+				</fieldset>
 	
-		<fieldset class="yourInfo">
-			<legend>Your Information</legend>
-		<form form="usrform">
-			<label for="fname">First Name</label>
-			<input class="borderSpinActive" type="text" id="fname" name="firstname" form="usrform" placeholder="Enter First Name">
+
+				<div id="map">
+					<h2 class="hidden">Embedded Map</h2>
+				</div>
+				
+			</div>
+
+	
+			<fieldset class="yourInfo">
+				<!--<legend>Your Information</legend>-->
+					<label for="fname">First Name</label>
+					<input class="borderSpinActive" type="text" id="fname" name="firstname" form="usrform" placeholder="Enter First Name">
 		
-			<label for="lname">Last Name</label>
-			<input class="borderSpinActive" type="text" id="lname" name="lastname" form="usrform" placeholder="Enter Last Name">
+					<label for="lname">Last Name</label>
+					<input class="borderSpinActive" type="text" id="lname" name="lastname" form="usrform" placeholder="Enter Last Name">
 	
-			<label for="subject">Subject</label>
-			<input class="borderSpinActive" type="text" id="subject" name="subject" form="usrform" placeholder="Write Subject Here">
+					<label for="subject">Subject</label>
+					<input class="borderSpinActive" type="text" id="subject" name="subject" form="usrform" placeholder="Write Subject Here">
 	
-			<label for="subject">Message</label>
-			<textarea class="borderSpinActive" rows="9" cols="8" name="message" form="usrform" placeholder="Write Message Here"></textarea>
-		</fieldset>
-	
-			<input class="borderSpin" type="submit" value="Submit">
+					<label for="subject">Message</label>
+					<textarea class="borderSpinActive" rows="9" cols="8" name="message" form="usrform" placeholder="Write Message Here"></textarea>
 		
-		</form>
-	<!-- </div> -->
+					<input class="borderSpin" type="submit" value="Submit">
+				</fieldset>
+			</form>
+	</div>
 
 
 </main>
 
+	<section class="contactCard">
+		<h2 class="hidden">Contact Information</h2>
+		<div class="contactInformation">
+				<h2>Spencer </br>Dipierdomenico</h2>
+				<h3>London, Ontario</h3>
+				<h3>(519) 694-9569</h3>
+
+		</div>
+		<div class="contactImg"><img src="./images/contact/contact_picture.gif"></div>
+		<div class="contactImg"><img src="./images/contact/contact_picture.gif"></div>
+		<div class="contactImg"><img src="./images/contact/contact_picture.gif"></div>
+	</section>
+
 <!-- footer includes social media links and copyright and navigation at bottom -->
 <footer class="footer">
-
+<h2 class="hidden">Footer</h2>
 	<nav class="footerMenu">
 	
 		<ul class="socialIcons"> <!-- row -->
+			<h2 class="hidden">Social Media Links</h2>
 	
 			<li class="socialIcon borderSpin"><a href="#">
 			
@@ -165,6 +199,7 @@
 	
 	
 	<section class="copyright">
+		<h2 class="hidden">Copyright info</h2>
 	
 		<div class="spinnerSquare">
 			<div class="rotateLeft spinnerWrapOuter">
