@@ -91,102 +91,77 @@
 
 
 <div class="contactMain">
-
-			
-
-
 	<div class="formWrap"> <!-- this one wraps actual form from top bar down to submit -->
+		<form class="formMain" form="usrform">
+			<h2 class="hidden">Contact Form</h2>
+			<div class="formRow">
+				<fieldset class="aoi">
+		  			<legend>What'chu Want?</legend>
 
-
-
-
-
-		<form class="formMain">
-
-		<div class="formRow">
-
-			
-
-		<fieldset class="aoi">
-		  <!-- <legend>What'chu Want?</legend> -->
-
-		  <input type="radio" name="webs">
-		  <label for="webs">WEB</label><br/>
+		  			<input type="radio" name="webs">
+		  			<label for="webs">WEB</label><br/>
 	  
-		  <input type="radio" name="gfx">
-		  <label for="gfx">GFX</label><br/>
+		  			<input type="radio" name="gfx">
+		  			<label for="gfx">GFX</label><br/>
 	  
-		  <input type="radio" name="other">
-		  <label for="other">OTHER</label>
+		  			<input type="radio" name="other">
+		  			<label for="other">OTHER</label>
 
-		  <input class="borderSpinActive" type="text" id="fname" name="firstname" form="usrform" placeholder="Specify Now">
+					<input class="borderSpinActive" type="text" id="fname" name="firstname" form="usrform" placeholder="Specify Now">
+					<label class="hidden" for="other">OTHER</label>
+
+				</fieldset>
+	
+
+				<div id="map">
+					<h2 class="hidden">Embedded Map</h2>
+				</div>
+				
+			</div>
+
+	
+			<fieldset class="yourInfo">
+				<!--<legend>Your Information</legend>-->
+					<label for="fname">First Name</label>
+					<input class="borderSpinActive" type="text" id="fname" name="firstname" form="usrform" placeholder="Enter First Name">
 		
-
-		</fieldset>
-
-					
+					<label for="lname">Last Name</label>
+					<input class="borderSpinActive" type="text" id="lname" name="lastname" form="usrform" placeholder="Enter Last Name">
+	
+					<label for="subject">Subject</label>
+					<input class="borderSpinActive" type="text" id="subject" name="subject" form="usrform" placeholder="Write Subject Here">
+	
+					<label for="subject">Message</label>
+					<textarea class="borderSpinActive" rows="9" cols="8" name="message" form="usrform" placeholder="Write Message Here"></textarea>
 		
-		<div id="map">
-		</div>
-
-
-
+					<input class="borderSpin" type="submit" value="Submit">
+				</fieldset>
+			</form>
 	</div>
 
-	
-		<fieldset class="yourInfo">
-			<!--<legend>Your Information</legend>-->
-		<form form="usrform">
-			<label for="fname">First Name</label>
-			<input class="borderSpinActive" type="text" id="fname" name="firstname" form="usrform" placeholder="Enter First Name">
-		
-			<label for="lname">Last Name</label>
-			<input class="borderSpinActive" type="text" id="lname" name="lastname" form="usrform" placeholder="Enter Last Name">
-	
-			<label for="subject">Subject</label>
-			<input class="borderSpinActive" type="text" id="subject" name="subject" form="usrform" placeholder="Write Subject Here">
-	
-			<label for="subject">Message</label>
-			<textarea class="borderSpinActive" rows="9" cols="8" name="message" form="usrform" placeholder="Write Message Here"></textarea>
-		
-			<input class="borderSpin" type="submit" value="Submit">
-
-		</fieldset>
-	
-		
-		</form>
-	</div>
-
-	</div>
 
 </main>
 
-
-<!-- <fieldset class="contactInfoBox"> -->
-
 	<section class="contactCard">
+		<h2 class="hidden">Contact Information</h2>
+		<div class="contactInformation">
+				<h2>Spencer </br>Dipierdomenico</h2>
+				<h3>London, Ontario</h3>
+				<h3>(519) 694-9569</h3>
+
+		</div>
 		<div class="contactImg"><img src="./images/contact/contact_picture.gif"></div>
 		<div class="contactImg"><img src="./images/contact/contact_picture.gif"></div>
 		<div class="contactImg"><img src="./images/contact/contact_picture.gif"></div>
 	</section>
 
-	
-	<!-- <h2 id="contactName"><span>Spencer</span>
-	</br>Dipierdomenico</h2>
-		<p>
-			<div class=" lineBreak"><h2>E<span>MAIL</span></div>
-			<h2><span>SPENCER@BLITZED.CA</span></h2>
-			<div class="lineBreak"><h2>CELL<span>PHONE</span></div>
-		<h2><span>(519) 694-9569</span></h2></br>
-		</p> 
-	</fieldset> -->
-
 <!-- footer includes social media links and copyright and navigation at bottom -->
 <footer class="footer">
-
+<h2 class="hidden">Footer</h2>
 	<nav class="footerMenu">
 	
 		<ul class="socialIcons"> <!-- row -->
+			<h2 class="hidden">Social Media Links</h2>
 	
 			<li class="socialIcon borderSpin"><a href="#">
 			
@@ -224,6 +199,7 @@
 	
 	
 	<section class="copyright">
+		<h2 class="hidden">Copyright info</h2>
 	
 		<div class="spinnerSquare">
 			<div class="rotateLeft spinnerWrapOuter">

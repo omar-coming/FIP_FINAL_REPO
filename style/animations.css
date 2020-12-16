@@ -209,3 +209,53 @@
 .rotateLeft{
 animation: rotate-left 5s infinite;
 }
+
+
+/* LINEBREAK ANIMATION */
+
+
+@keyframes border-spin-linebreak-left{
+	0%{ 
+		
+			border-bottom: 2px solid #25F3CD;
+		}
+		
+		50%{ 
+			border-bottom: 2px solid #FFB323;
+
+		}
+		100%{ 
+			border-bottom: 2px solid #25F3CD;
+		}
+
+}
+
+@keyframes border-spin-linebreak-right{
+	0%{ 
+		
+			border-bottom: 2px solid #FFB323;
+		}
+		
+		50%{ 
+			border-bottom: 2px solid #25F3CD;
+
+		}
+		100%{ 
+			border-bottom: 2px solid #FFB323;
+		}
+}
+
+/* END OF LINEBREAK ANIMATION KEYFRAMES */
+
+/* media page */
+
+@keyframes albumSpin{
+	0%{
+		transform:rotate(0deg);  
+	}
+	
+	100%{
+		transform:rotate(360deg);  
+	}
+	
+	}

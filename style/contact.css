@@ -13,25 +13,64 @@
 				/* google map is a pos and this fixes it being slight off alignment with rest of divs */
 				right:0.11em;
 
+				display:flex;
+
 			}
-            
+
+			.qrCode{
+				display:flex;
+				width:20%;
+				height:100%;
+						}
+
+						.qrCode>img{
+							justify-content: center;
+							align-content: center;
+							max-width:100%;
+						}
             
 /* contact page styling */
 
 .contactCard{
 	display:flex;
-	flex-direction:row wrap;
+	flex-direction:row;
 
 	justify-content:space-evenly;
 	background:white;
+	padding:20px;
+	padding-top:10px;
+
+	position:relative;
+}
+
+
+.contactInformation{
+	height:auto;
+	width:100%;
+	position:absolute;
+	bottom:-10px;
+	opacity:100%;
+	margin:10px;
+	border:solid white 20px;
+	box-sizing:border-box;
+	border-top:none;
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+}
+
+.contactInformation>h2,.contactInformation>h3{
+	color:white;
 	padding:10px;
+	text-align: right;
+	margin-right:20px;
+
 }
 
 .contactImg>img{
 	display:block;
 	width:100%;
 	
-	/* set items at 0 baseline and allow to grow */
+	/* set items at 0 baseline and allow to grow */ /* I think */
 	flex:3 1 0px;
 	
 	/* background: rgb(228,228,228);
@@ -39,89 +78,18 @@
 	*/
 	
 }
-
-/*
-.contactCard{
-	display:flex wrap;
-	text-align: center;
- 	justify-content: space-evenly;
-	align-items: flex-start ;
-		margin-bottom:10px;
-
-		
-	}
-
-	.contactImgWrap{
-		padding:10px;	
-		display: flex column wrap;	
-		background: white;
-		max-width:auto;
-		flex:1;
-		height:auto;
-
-
-
-	}
-
-	.contactImgWrap>img{
-		margin:0 auto;
-		height:auto;
-		width:1/3;
-	}
-
-	*/
-
 	.contactImg:nth-child(2){
-		opacity:.66;
-	}
-
-	.contactImg:nth-child(3){
 		opacity:.33;
 	}
 
-	#contactName{
-			color:white;
-			font-family:Inconsolata, arial;
-			font-size:2.25em;
-			font-weight:1000;
-		
-		
-			text-transform:uppercase;
-		
-			justify-content:center;
-			align-content:center;
-			
-			-webkit-text-stroke-width: 2px;
-			-webkit-text-stroke-color: #FFB323;
-			
-		
+	.contactImg:nth-child(3){
+		opacity:.66;
 	}
-
-	#contactName span{
-		letter-spacing: .5em;
-			margin:0 auto;
-		-webkit-text-stroke-width: 2px;
-		-webkit-text-stroke-color: #25F3CD;		
-	}
-
-
-.contactInfoBox{
-	display:flex;
-	text-align:center;
-	padding:10px;
-	background:white;
-	margin-bottom:10px;
-
-	animation:border-spin-active 2s infinite;
-
-}
-
 
 /* contact form styling for contact page */
 
 .formMain{
 	width:100%;
-
 	box-sizing: border-box;
 }
 	.formMain legend {
@@ -139,7 +107,6 @@
 	text-align:left;
 	border-color:black;
 	width:40%;
-	height:100%;
 
 
 	}
@@ -169,8 +136,6 @@
 /*formWrap = contact form wrap - contact form is found on contact page */
 
 	.formWrap{
-
-	
 	display:flex;
 	flex-direction: column wrap;
 	justify-content: space-evenly;
@@ -178,26 +143,25 @@
 	}
 
 	.formRow{
-		display:flex;
-		flex-direction: row;
-		justify-content: space-between;
-		margin-bottom:10px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom:10px;
 	}
 
 	input[type=text], select, textarea {
 	width: 100%;
-	padding: 10px 20px;
+	padding: 10px;
 	display: inline-block;
-	border: 2px solid black;
+	border: 2px outset #999;
 	box-sizing: border-box;
 	overflow:hidden;
 	margin-top:10px;
-
 	resize:none;
 	} 
 
 	 textarea:focus{
-		 outline:none;
+		outline:none;
 	 }
 	
 
@@ -212,13 +176,9 @@
 	height:relative;
 	background-color: black;
 	color: white;
-	padding: 10px 0;
+	padding: 10px;
 	margin: 0 auto;
-
-
-
-
-	border: none;
+	margin-top:10px;
 	cursor: pointer;
 	font-size:1em;
 	font-family:Inconsolata, arial;
@@ -247,10 +207,26 @@
 
 input[type="radio"] {
 	box-sizing: border-box;
-
 }
 
 .contactMain{
 	display:flex;
 	margin:10px;
+}
+
+/* responsive shit */
+
+@media screen and (max-width: 600px){
+	.contactImg{
+		display:none;
+	}
+
+	.contactImg:last-child{
+		display:block;
+	}
+
+	.contactInformation{
+		background: rgb(0,0,0);
+	}
+
 }
