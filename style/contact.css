@@ -129,6 +129,7 @@
 	.formWrap{
 	display:flex;
 	justify-content: space-evenly;
+	margin:0 auto;
 	}
 
 	.formRow{
@@ -147,7 +148,6 @@
 	overflow:hidden;
 	margin-top:10px;
 	resize:none;
-	margin-bottom:10px;
 	} 
 
 	 textarea:focus{
