@@ -38,6 +38,21 @@
 	text-align: right;
 	margin-right:20px;
 	font-size:1em;
+}
+
+.contactInformation>h3{
+	font-size:0.8em;
+}
+
+.contactInformation>h3>a{
+	color:white;
+	text-decoration: none;
+	border-bottom:1px solid white;
+}
+
+.contactInformation>h3>a:hover{
+	color:#25F3CD;
+	border-bottom:1px solid #FFB323;
 
 }
 
@@ -132,6 +147,7 @@
 	overflow:hidden;
 	margin-top:10px;
 	resize:none;
+	margin-bottom:10px;
 	} 
 
 	 textarea:focus{
@@ -214,5 +230,7 @@ input[type="radio"] {
 		background: rgb(0,0,0);
 		background: linear-gradient(90deg, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 60%);
 	}
+
+	body{overflow-x:hidden;}
 
 }

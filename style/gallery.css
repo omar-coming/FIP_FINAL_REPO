@@ -33,10 +33,9 @@
 }
 
 .galleryItem:hover{
-	transform:scalex(1.2)scaley(1.2);
+	transform:scalex(1.1)scaley(1.1);
 	z-index:3;
-    transition:1s;
-    
+	transition:1s;
 	}
 	
 	@media screen and (max-width: 600px){

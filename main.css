@@ -20,7 +20,7 @@ h3{
 
 p{
 	font-size:1em;
-	font-family:roboto;
+	font-family:montserrat, arial;
 	color:black;
 }
 
@@ -35,14 +35,15 @@ p{
 
 
 .lineBreak>h2{
-	color:#111;
+	color:white;
+	background:black;
+	padding:5px;
 }
 .lineBreak>h2>span{
-		color:#111;
+		color:white;
 }
 
-
-/* linebreak with text in middle - content must be set blank or the breaks dont work */
+/* linebreak thingy */
 
 .lineBreak::before, .lineBreak:after {
     content: '';
@@ -66,8 +67,8 @@ p{
 }
 	
 .mainWrapper{
-	border-right:5px solid #999;
-	border-left:5px solid #999 ;
+	border-right:5px solid #2f2f2f;
+	border-left:5px solid #2f2f2f ;
 	text-align:center;
 
 	align-items:center;
@@ -81,8 +82,6 @@ p{
 }
 
 /* background between header and footer*/
-main{		
-}
 
 .mainWrapper > .hidden{display:none;}
 
@@ -100,7 +99,7 @@ main{
 }
 
 .header{
-	border-bottom:5px solid #999;
+	border-bottom:5px solid #2f2f2f;
 	padding:0;
 	margin:0;
 	width:auto;
@@ -121,8 +120,8 @@ main{
 	height:auto;
 	width:2em;	
 	display:inline-flex;
+	fill:#25F3CD;
 	}
-
 
 .mainNav{
 	width:100%;
@@ -197,7 +196,7 @@ main{
 	padding:0;
 	margin:0;
 	width:100%;
-	border-top:5px solid #999;
+	border-top:5px solid #2f2f2f;
 	display:flex;
 	flex-direction:row wrap;
 
@@ -392,14 +391,15 @@ main{
 	padding:10px;
 	margin:10px;
 	display:block;
-	border:2px solid black;
-
+	flex:3 0 25%;
+	border:solid black 2px;	
 }
 
 /*other article components*/
 .article>img{
 	max-width:100%;
-	border:2px double #111;
+	border:5px double black;
+	box-sizing:border-box;
 }
 
 .article>h2{
@@ -412,6 +412,7 @@ main{
 	text-transform: uppercase;
 	color:#25F3CD;
 	line-height: 10px;
+
 }
 
 
@@ -420,9 +421,11 @@ main{
 	max-height:relative;
 
 	padding:10px;
-
+	padding-top:0px;
 	color:black;
 	background:white;
+
+	text-align:left;
 
 
 
@@ -437,7 +440,7 @@ order:1;
 
 .article:nth-child(3){
 
-	order:2;
+	order:1;
 
 }
 
@@ -525,28 +528,17 @@ order:1;
 		display:flex;
 		flex-flow:row wrap;
 	}
-	
-
-
-	.article img{
-		border-radius:0px 0px 0px 0px;
-	}
 
 	
-	.article:nth-child(2), .article:nth-child(2)>img{
-		
-		border-radius: 0px 0px 0px 0px;
-		order:1;
+	.article:nth-child(2){
+				order:1;
 	}
 	
 	.article:nth-child(3){
 		order:2;
 	}
 	
-	.article:nth-child(4), .article:nth-child(4)>img{
-
-		border-radius: 0px 0px 0px 0px;
-
+	.article:nth-child(4){
 		order:3;
 	}
 	
